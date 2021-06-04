@@ -1,0 +1,1438 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>دِوِلوپیکس | ربات مجموعه توسعه‌دهندگان</title>
+        <meta name="description" content="خدمات نوین برنامه‌نویسی">
+        <meta name="keywords" content="دولوپیکس,برنامه نویسی,IRDevelopers,گروه های برنامه‌نویسی,برنامه نویسان ایرانی,گروه برنامه نویسی تلگرام,برنامه نویس ایرانی,برنامه نویسان ایرانی,برنامه‌نویسی,Developix">
+        <meta name="author" content="Erfan Mola">
+        <meta property="og:locale" content="fa_IR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="دِوِلوپیکس | ربات مجموعه توسعه‌دهندگان" />
+        <meta property="og:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta property="og:site_name" content="دِوِلوپیکس | ربات مجموعه توسعه‌دهندگان" />
+        <meta property="og:image" content="/icons/android-icon-192x192.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta name="twitter:title" content="دِوِلوپیکس | ربات مجموعه توسعه‌دهندگان" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ebebeb">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ebebeb">
+        <link rel="stylesheet" href="../css/app.css">
+        <script src="../js/bundle.js"></script>
+    </head>
+
+    <body>
+
+        <script>
+            NProgress.start();
+
+            document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                    return false;
+                }
+            }
+
+            window.addEventListener("contextmenu", e => {
+                e.preventDefault();
+                return false;
+            });
+        </script>
+
+        <div class="holder">
+
+            <header id="header">
+
+                <a href="/" id="brand">
+                    <svg id="dp-logo" viewBox="0 0 856 636" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d=" M 208.01 0.00 L 208.73 0.00 C 210.84 1.57 213.54 0.88 215.97 1.01 C 266.98 0.98 317.99 1.01 369.00 1.00 C 369.00 20.33 369.00 39.67 369.00 59.00 C 323.36 59.00 277.73 59.01 232.09 59.00 C 181.91 109.17 131.72 159.34 81.55 209.52 C 175.71 303.67 269.86 397.82 364.00 491.97 C 363.99 519.33 364.02 546.68 363.99 574.04 C 244.48 454.51 124.96 335.01 5.45 215.49 C 3.50 213.57 1.14 211.82 0.62 208.94 L 0.00 210.05 L 0.00 207.74 L 0.02 208.87 C 69.66 139.35 139.12 69.66 208.82 0.21 L 208.01 0.00 Z" />
+                            <path d=" M 645.93 0.00 L 647.04 0.00 C 716.73 69.57 786.26 139.31 856.00 208.83 L 856.00 208.87 C 852.20 213.15 847.42 216.58 844.49 221.57 C 727.00 339.08 609.47 456.56 492.00 574.09 C 490.59 572.74 491.09 570.71 490.97 569.01 C 491.03 543.66 490.99 518.31 490.99 492.96 C 585.47 398.47 679.95 303.99 774.44 209.51 C 724.27 159.33 674.09 109.17 623.91 59.00 C 578.27 59.00 532.64 59.00 487.00 59.00 C 487.00 39.67 487.00 20.33 487.00 1.00 C 540.42 0.95 593.85 1.10 647.27 0.93 L 645.93 0.00 Z" />
+                            <path d=" M 400.00 1.00 C 418.67 1.00 437.33 1.00 456.00 1.00 C 456.00 53.67 456.00 106.33 456.00 159.00 C 404.26 158.97 352.51 159.06 300.77 158.96 C 279.14 180.42 257.67 202.06 236.08 223.57 C 279.39 266.78 322.54 310.15 365.92 353.29 C 366.05 379.59 366.06 405.90 365.91 432.20 C 337.27 404.12 309.14 375.51 280.69 347.22 C 250.67 317.26 220.78 287.18 190.68 257.32 C 179.74 245.70 168.13 234.73 157.00 223.30 C 197.15 183.26 237.26 143.17 277.29 103.00 C 318.19 103.00 359.10 103.00 400.00 103.00 C 400.00 69.00 400.00 35.00 400.00 1.00 Z" />
+                            <path d=" M 488.00 103.00 C 518.06 103.03 548.13 102.94 578.18 103.04 C 579.75 102.88 580.77 104.21 581.81 105.15 C 621.15 144.65 660.72 183.91 699.99 223.47 C 687.10 236.07 674.55 249.01 661.70 261.64 C 659.20 263.48 656.84 265.49 654.77 267.80 C 588.78 333.79 522.78 399.78 456.80 465.77 C 455.57 466.79 456.14 468.57 455.97 469.96 C 456.04 515.97 455.97 561.98 456.00 607.99 C 446.75 617.35 437.29 626.53 428.15 636.00 L 428.03 636.00 C 418.65 626.70 409.33 617.32 399.99 607.97 C 400.09 553.75 399.83 499.51 400.12 445.30 L 401.43 444.48 C 401.06 444.21 400.33 443.68 399.96 443.41 C 473.45 369.98 546.90 296.51 620.35 223.03 C 598.99 201.67 577.67 180.26 556.25 158.96 C 533.50 159.05 510.75 158.98 488.00 159.00 C 488.00 140.33 488.00 121.67 488.00 103.00 Z" />
+                        </g>
+                    </svg>
+
+                    <h1 class="bold">دِوِلوپیکس</h1>
+                </a>
+
+                <ul id="menu" class="tablet-and-up">
+                    <li class="neumorph-1 clickable"><a href="#section-intro-bot">معرفی</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-levels">درجه‌ها</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-basics">مفاهیم</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-tutorials">آموزش</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-commands">دستورات</a></li>
+                </ul>
+
+                <ul id="widgets">
+                    <li class="neumorph-1 clickable desktop-only toggle-screen" title="حالت تمام‌صفحه"><i class="icon-maximize toggle-screen-icon"></i></li>
+                    <li class="toggle-btn" id="mode-switch">
+                        <input type="checkbox" id="mode-switch-toggle" checked>
+                        <span></span>
+                    </li>
+                </ul>
+
+            </header>
+
+            <section id="section-intro-bot" class="sections">
+
+                <img class="no-select bot-image neumorph-1" src="../assets/images/bots/IRDevelopers-HD.png" alt="IRDevelopersBot">
+
+                <div id="intro-container">
+                    <h2>ربات مجموعه توسعه‌دهندگان</h2>
+
+                    <p>
+ربات مجموعه توسعه‌دهندگان با هدف مدیریت هوشمند گروه های برنامه‌نویسی مجموعه دِوِلوپیکس توسعه یافته است و با داشتن قابلیت های تفکیک درجه های کاربری و دسترسی های مختلف و دسته‌بندی سوالات و قابلیت های ضد اسپم و قابلیت های چالشی، نظم و سرگرمی را در گروه‌های مجموعه برقرار می‌کند
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="section-levels" class="sections">
+
+                <h2 class="title">درجه‌ها</h2>
+
+                <ul>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user" style="opacity: 0.75"></i>
+
+                            <h3>کاربر دستیار</h3>
+
+                            <ul>
+                                <li>ثبت سوال</li>
+                                <li>حق رای</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus"></i>
+
+                            <h3>کاربر ناظر</h3>
+
+                            <ul>
+                                <li>دسترسی های دستیار ناظر</li>
+                                <li>لغو سکوت</li>
+                                <li>ثبت اخطار</li>
+                                <li>حذف پیام</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus" style="color: var(--accent)"></i>
+
+                            <h3>سرپرست ناظر</h3>
+
+                            <ul>
+                                <li>دسترسی های استاد ناظر</li>
+                                <li>حذف انبوه پیام</li>
+                                <li>تغییر دسته‌بندی سوال</li>
+                                <li>بستن واگذاری</li>
+                                <li>تعیین وضعیت کاربران</li>
+                                <li>مصونیت از اخراج</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check" style="opacity: 0.75"></i>
+
+                            <h3>کاربر راهنما</h3>
+
+                            <ul>
+                                <li>دسترسی های کاربر دستیار</li>
+                                <li>تغییر دسته‌بندی سوال</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus"></i>
+
+                            <h3>استاد ناظر</h3>
+
+                            <ul>
+                                <li>دسترسی های کاربر ناظر</li>
+                                <li>اخراج کاربران</li>
+                                <li>لغو اخراج کاربران</li>
+                                <li>حذف پیام</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check" style="color: var(--accent)"></i>
+
+                            <h3>سرپرست راهنما</h3>
+
+                            <ul>
+                                <li>دسترسی های استاد راهنما</li>
+                                <li>حذف انبوه پیام</li>
+                                <li>حذف پیام ربات</li>
+                                <li>بستن واگذاری</li>
+                                <li>تعیین وضعیت کاربران</li>
+                                <li>مصونیت از اخراج</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus" style="opacity: 0.75"></i>
+
+                            <h3>دستیار ناظر</h3>
+
+                            <ul>
+                                <li>ثبت سوال</li>
+                                <li>حق رای</li>
+                                <li>ساکت کردن</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check"></i>
+
+                            <h3>استاد راهنما</h3>
+
+                            <ul>
+                                <li>دسترسی های کاربر راهنما</li>
+                                <li>حق رای</li>
+                                <li>بستن سوال</li>
+                                <li>ساکت کردن</li>
+                                <li>حذف پیام</li>
+                                <li>ثبت اخطار</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user" style="color: var(--accent)"></i>
+
+                            <h3>مدیر کل</h3>
+
+                            <ul>
+                                <li>کل دسترسی‌ها</li>
+                                <li>دسترسی Wheel</li>
+                                <li>دسترسی Power</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section id="section-basics" class="sections">
+
+                <h2 class="title">مفاهیم</h2>
+
+                <ul>
+                    <li>
+                        <div class="neumorph-1">
+                            <h3>سیستم امتیازدهی</h3>
+
+                            <p>امتیازها راهی برای تشکر از کاربرانی می‌باشند که به سوالات پاسخ می‌دهند و سعی در کمک به بقیه دارند، صرفا یک روش تشکر و نمادین که با اهدای هر امتیاز به امتیازات آن کاربر افزوده می‌شود و با توجه به تعداد امتیازات یک کاربر می‌توان به میزان مفید بودن و همکاری وی پی برد، هر کاربر روزانه می‌تواند به‌اندازه عدد درجه‌کاربری خود امتیاز اهدا کند</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم واگذاری</h3>
+
+                            <p>واگذاری‌ها یک نظرسنجی عمومی برای انجام یک کار مشخص از قبیل اخراج/سکوت/اخطار یا سایر اقدامات می‌باشند که نیازمند به رای کاربران دارای حق رای می‌باشند، کاربران سطح پایین‌تر می‌توانند برای تذکر به کاربران سطح بالاتر از خود اقدام به ایجاد واگذاری برای نظرسنجی عمومی کنند، از مزیت های این سیستم می‌توان به کم‌رنگ شدن فاصله درجه‌ای اشاره کرد، چرا که هر کاربر با هر سطحی می‌تواند به کاربران سطح بالاتر از خود با استفاده از واگذاری تذکر بدهد، همچنین برای عملی شدن یک واگذاری نیازمند به تعداد رای معادل دو برابر عدد درجه‌کاربری فرد واگذار شده است</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم ضد اسپم و NSFW</h3>
+
+                            <p>سیستم ضد اسپم از فعالیت اسپمرها و ربات های تبلیغاتی جلوگیری می‌کند و همچنین با تجهیز به سیستم تشخیص کلمات رکیک و محتوای NSFW می‌تواند محتوا های مبتذل را با دقت مطلوبی تشخیص داده و اقدام مناسب در برابر آن انجام دهد تا عملکرد گروه مختل نشود</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>چالش های برنامه‌نویسی</h3>
+
+                            <p>چالش های برنامه‌نویسی برای سنجش میزان دانش فنی در حوزه های مشخص و ایجاد فضای رقابتی دوستانه به‌کار می‌روند و جزو قابلیت های اینلاین ربات می‌باشند که می‌توان در سایر گروه‌ها نیز از این قابلیت بهره‌مند شد</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="neumorph-1">
+                            <h3>سیستم سوالات</h3>
+
+                            <p>قابلیت ثبت سوالات و تفکیک آن‌ها بر اساس دسته‌بندی قابلیت دسترسی به سوالات یک دسته‌بندی خاص را میسر می‌کند و از گم شدن پیام سوالات مطرح شده در بین چت‌ها جلوگیری می‌کند و باعث منظم و هوشمندتر شدن فرایند و عملکرد گروه‌ها می‌شود</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم پیام‌خصوصی</h3>
+
+                            <p>قابلیت پیام‌خصوصی به‌کاربران اجازه می‌دهد که در گروه‌های عمومی با همدیگر درِ گوشی صحبت کنند و پیام های خصوصی مبادله کنند، بدون آنکه کسی دیگر متوجه محتوای پیام شود، این قابلیت اینلاین است و در سایر گفتگوها نیز می‌توان از این قابلیت بهره‌مند شد</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم همگام‌ساز محتوا</h3>
+
+                            <p>سیستم یکپارچه همگام‌ساز محتوا سعی بر جمع‌آوری لیست کامل مطالب و محتوا های تولید شده در زمینه برنامه‌نویسی در سایر بسترها مانند اینستاگرام و وبسایت‌ها را دارد و هدف آن گردآوری و دسته‌بندی این مطالب و ارائه یکپارچه آن به‌صورت اینلاین بر بستر تلگرام می‌باشد، همچنین از آنجایی که این قابلیت به‌صورت اینلاین است، استفاده از آن در تمامی گفتگوها میسر می‌باشد</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>کپچای تشخیص انسان</h3>
+
+                            <p>با استفاده از سیستم هوشمند کپچا، انسان‌ها از ربات‌ها و اسپمرها و تبچی‌ها تفکیک می‌شوند و فقط عضویت کاربران واقعی در گروه‌ها میسر می‌شود</p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>چالش های ریاضی</h3>
+
+                            <p>چالش های ریاضی برای سنجش میزان دانش ریاضی و سرعت محاسباتی افراد و ایجاد فضای رقابتی دوستانه به‌کار می‌روند و جزو قابلیت های اینلاین ربات می‌باشند که می‌توان در سایر گروه‌ها نیز از این قابلیت بهره‌مند شد</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="section-tutorials" class="sections">
+
+                <h2 class="title">آموزش‌ها</h2>
+
+                <ul>
+                    <li>
+                        <h3>پیام خصوصی</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/pv-message.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+
+                    <li>
+                        <h3>چالش‌ها</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/challenge.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+
+                    <li>
+                        <h3>مطالب</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/content-sync.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="section-commands" class="sections">
+
+                <h2 class="title">دستورات عمومی</h2>
+
+                <ul>
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1"></i>
+                        <h4>Warn</h4>
+                        <p>برای ثبت اخطار به‌کار می‌رود و به ازای هر عدد اخطار، کاربر مربوطه به‌مدت ۲ ساعت در حالت سکوت قرار می‌گیرد و چنانچه تعداد اخطار های کاربر از ۵ عبور کند، به‌مدت یک‌هفته از گروه مربوطه اخراج می‌شود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>تعداد</td>
+                                <td>Int</td>
+                                <td>1</td>
+                                <td>تعداد اخطار را مشخص می‌کند</td>
+                            </tr>
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل اخطار را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1"></i>
+                        <h4>Mute</h4>
+                        <p>برای قرار دادن کاربر در حالت سکوت به‌مدت مشخص به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>all</td>
+                                <td>پسوند</td>
+                                <td>all</td>
+                                <td>این پارامتر کاربر را در تمامی گروه‌ها ساکت می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>ساعت</td>
+                                <td>Int</td>
+                                <td>2</td>
+                                <td>تعداد ساعت های سکوت را مشخص می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل سکوت را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1 blue"></i>
+                        <h4>Unmute</h4>
+                        <p>برای خارج کردن کاربر از حالت سکوت به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>all</td>
+                                <td>پسوند</td>
+                                <td>all</td>
+                                <td>این پارامتر کاربر را در تمامی گروه‌ها از سکوت خارج می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل خارج کردن از سکوت را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1"></i>
+                        <h4>Ban</h4>
+                        <p>برای اخراج کاربر از گروه به‌مدت مشخص به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>all</td>
+                                <td>پسوند</td>
+                                <td>all</td>
+                                <td>این پارامتر کاربر را در تمامی گروه‌ها اخراج می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>ساعت</td>
+                                <td>Int</td>
+                                <td>7</td>
+                                <td>تعداد روز های اخراج را مشخص می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل اخراج را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1 blue"></i>
+                        <h4>Unban</h4>
+                        <p>برای خارج کردن کاربر از حالت اخراج به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>all</td>
+                                <td>پسوند</td>
+                                <td>all</td>
+                                <td>این پارامتر کاربر را در تمامی گروه‌ها از اخراج خارج می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل خارج کردن از اخراج را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1"></i>
+                        <h4>Delete</h4>
+                        <p>برای حذف یک پیام یا انبوهی از پیام‌ها به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>جهت</td>
+                                <td>String</td>
+                                <td>up</td>
+                                <td>پیام های بالاتر/پایین‌تر از پیام ریپلای شده را پاک می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>تعداد</td>
+                                <td>Int</td>
+                                <td>1</td>
+                                <td>تعداد پیام های که باید پاک شوند را مشخص می‌کند</td>
+                            </tr>
+
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon blue symbol neumorph-1"></i>
+                        <h4>Trust</h4>
+                        <p>برای قرار دادن کاربر در رده کاربران مورد اعتماد به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل اعتماد به کاربر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-octagon symbol neumorph-1"></i>
+                        <h4>UnTrust</h4>
+                        <p>برای قرار دادن کاربر در وضعیت مشکوک به اسپمر به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دلیل</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دلیل مشکوک بودن کاربر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Mark</h4>
+                        <p>برای ثبت پیام به‌عنوان سوال به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دسته‌بندی</td>
+                                <td>String</td>
+                                <td>عمومی</td>
+                                <td>برای تعیین دسته‌بندی سوال به‌کار می‌رود</td>
+                            </tr>
+
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Mark To</h4>
+                        <p>برای تغییر دسته‌بندی سوال مطرح شده به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دسته‌بندی</td>
+                                <td>String</td>
+                                <td>عمومی</td>
+                                <td>برای تعیین دسته‌بندی سوال به‌کار می‌رود</td>
+                            </tr>
+
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>List</h4>
+                        <p>برای نمایش لیست سوالات به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+
+                            <tr>
+                                <td>دسته‌بندی</td>
+                                <td>String</td>
+                                <td>عمومی</td>
+                                <td>دسته‌بندی سوالات را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Top</h4>
+                        <p>برای نمایش کاربران برتر بر اساس امتیاز به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>تعداد</td>
+                                <td>Int</td>
+                                <td>10</td>
+                                <td>تعداد کاربران مورد نمایش را مشخص می‌کند</td>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Yields</h4>
+                        <p>برای نمایش واگذاری های فعال به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>+</h4>
+                        <p>برای اهدای امتیاز به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>تعداد</td>
+                                <td>Int</td>
+                                <td>1</td>
+                                <td>تعداد امتیاز اهدا شده را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4 style="direction: ltr;">!+</h4>
+                        <p>برای مطلع کردن کاربرانی به‌کار می‌رود که به‌جای امتیاز از کلمات برای تشکر استفاده می‌کنند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Solve</h4>
+                        <p>برای بستن سوال فعال و تغییر وضعیت آن به‌عنوان حل‌شده به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>Do</td>
+                                <td>پیشوند</td>
+                                <td>Do</td>
+                                <td>برای آگاه‌سازی از وجود دستور Solve به‌کار می‌رود</td>
+                            </tr>
+
+                            <tr>
+                                <td>شماره سوال</td>
+                                <td>Int</td>
+                                <td>سوال ریپلای شده</td>
+                                <td>شماره سوال مورد نظر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Levels</h4>
+                        <p>برای نمایش درجه‌های کاربری به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Rules</h4>
+                        <p>برای نمایش قوانین گروه‌ها به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Status</h4>
+                        <p>برای نمایش وضعیت و اطلاعات کاربر به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Help</h4>
+                        <p>برای نمایش راهنمای کامل یک دستور به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+
+                            <tr>
+                                <td>دستور</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دستور مورد نظر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Ask</h4>
+                        <p>برای مطلع ساختن کاربرانی به‌کار می‌رود که سوالشان را به‌صورت دقیق مطرح نمی‌کنند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Merge</h4>
+                        <p>برای مطلع ساختن کاربرانی به‌کار می‌رود که حرف های خود را در قالب چندین پیام مجزا ارسال می‌کنند و باعث اسپم می‌شوند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Proxy</h4>
+                        <p>برای معرفی و نمایش کانال پروکسینو به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Ronio</h4>
+                        <p>برای معرفی و نمایش وبسایت رونیو به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>DontAskToAsk</h4>
+                        <p>برای معرفی و نمایش وبسایت نپرس که بپرسم به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Info</h4>
+                        <p>برای نمایش صفحه Info در وبسایت نپرس که بپرسم به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>XY</h4>
+                        <p>برای نمایش صفحه XY در وبسایت نپرس که بپرسم به‌کار می‌رود</p>                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoPV</h4>
+                        <p>برای نمایش صفحه NoPV در وبسایت نپرس که بپرسم به‌کار می‌رود</p>                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoHello</h4>
+                        <p>برای نمایش صفحه NoHello در وبسایت نپرس که بپرسم به‌کار می‌رود</p>                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoJQuery</h4>
+                        <p>برای معرفی و نمایش وبسایت جی‌کوئری لازم نیست به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>HTMHell</h4>
+                        <p>برای معرفی و نمایش وبسایت جهنم وب به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Smusher</h4>
+                        <p>برای معرفی و نمایش وبسایت اسموشر به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Filito</h4>
+                        <p>برای معرفی و نمایش وبسایت فایلیتو به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>GP</h4>
+                        <p>برای معرفی و نمایش گروه یک دسته‌بندی خاص به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دسته‌بندی</td>
+                                <td>String</td>
+                                <td>Chat</td>
+                                <td>دسته‌بندی گروه مورد نظر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Start</h4>
+                        <p>برای ارائه مسیر شروع یک موضوع خاص به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>دسته‌بندی</td>
+                                <td>String</td>
+                                <td>Null</td>
+                                <td>دسته‌بندی مورد نظر را مشخص می‌کند</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Tab</h4>
+                        <p>برای نمایش اطلاعات و نحوه تبادل با گروه‌ها به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Captcha</h4>
+                        <p>برای یادآوری حل کپچا به کاربرانی که کپچا را حل نکرده‌اند به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Platform</h4>
+                        <p>برای درخواست اطلاعات بیشتر در حوزه ذکر پلتفرم در سوال مطرح شده به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoCall</h4>
+                        <p>برای تذکر به کاربرانی به‌کار می‌رود که برای سوالاتشان صرفا فرد خاصی را مخاطب قرار می‌دهند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoMention</h4>
+                        <p>برای تذکر به کاربرانی به‌کار می‌رود که برای پاسخگویی به سوالاتشان اقدام به منشن کردن افراد مختلف و ایجاد مزاحمت می‌کنند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>NoForward</h4>
+                        <p>برای تذکر به کاربرانی به‌کار می‌رود که سوال مطرح شده‌شان در یک گروه را به سایر گروه‌های غیرمرتبط با سوالشان فروارد می‌کنند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Refer</h4>
+                        <p>برای ارجاع مجدد سوال به پی‌وی متخصصین دسته‌بندی مربوطه به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>Do</td>
+                                <td>پیشوند</td>
+                                <td>Do</td>
+                                <td>برای آگاه‌سازی از وجود دستور Refer به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Groups</h4>
+                        <p>برای نمایش لیست گروه‌های برنامه‌نویسی مجموعه به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>OffTopic</h4>
+                        <p>برای تذکر به کاربرانی به‌کار می‌رود که اقدام به بحث های غیرمرتبط با حوزه گروه مربوطه می‌کنند و از تاپیک خارج می‌شوند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>AddQuestion</h4>
+                        <p>برای ارائه راهنمای افزودن سوال به چالش های برنامه‌نویسی ربات به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Commands</h4>
+                        <p>برای نمایش لیست دستورات ربات به‌صورت دکمه‌ای با راهنمای مختصر به‌کار می‌رود</p>
+
+                        <table class="neumorph-1">
+                            <tr>
+                                <th>ترتیب</th>
+                                <th>نوع</th>                      
+                                <th>مقدار پیش‌فرض</th>
+                                <th>توضیحات</th>
+                            </tr>
+
+                            <tr>
+                                <td>pv</td>
+                                <td>پسوند</td>
+                                <td>pv</td>
+                                <td>برای ارسال نتیجه دستور در PV به‌کار می‌رود</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-life-buoy symbol neumorph-1"></i>
+                        <h4>Questions</h4>
+                        <p>برای نمایش لیست دکمه‌ای تعداد سوالات دسته‌بندی های مختلف چالش های برنامه‌نویسی ربات به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>CopyRight</h4>
+                        <p>برای تذکر به کاربرانی به‌کار می‌رود که حقوق کپی‌رایت را رعایت نمی‌کنند</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Scores</h4>
+                        <p>برای ارائه راهنمایی در خصوص کاربرد سیستم امتیازدهی به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Cancel</h4>
+                        <p>برای لغو بازی ایجاد شده در گروه به‌کار می‌رود</p>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="icon-alert-circle symbol neumorph-1"></i>
+                        <h4>Unlock</h4>
+                        <p>برای باز کردن قفل اسلاید پست ارسال شده توسط اینلاین ربات به‌کار می‌رود</p>
+                    </li>
+
+                </ul>
+
+                <hr style="margin: 32px 0;">
+
+                <p class="note">پارامترها به ترتیب ذکر شده در مستندات بالا می‌باشند و می‌بایست به ترتیب از بالا به پایین در جدول وارد شوند</p>
+
+                <p class="note">پارامتر هایی که دلیل یک عمل را مشخص می‌کنند می‌بایست در لاین جدید نوشته شوند و جزو سوییچ های تک‌خطی محسوب نمی‌شوند</p>
+
+                <p class="note">پیشوند های دستورات مانند Do به‌صورت چسبیده نوشته می‌شوند (مثلا DoSolve) و پسوندها با فاصله قبل نوشته می‌شوند (مثلا Mute All)</p>
+
+            </section>
+
+        </div>
+
+        <footer class="neumorph-1 inset-1">
+            <div class="holder">
+
+                <ul>
+                    <li>
+                        <h4>وضعیت خدمات</h4>
+
+                        <p>برای مشاهده وضعیت در دسترس بودن یا نبودن سرویس های زیرمجموعه دِوِلوپیکس می‌توانید از صفحه زیر استفاده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://erfanxd.ir" target="_blank">
+                            <i class="icon-codesandbox"></i>
+                            وضعیت سرویس‌ها
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>اینستاگرام</h4>
+
+                        <p>برای مشاهده و اطلاع از مطالب و محتوا های تولید شده دِوِلوپیکس در بستر اینستاگرام می‌توانید صفحه زیر را دنبال کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://instagram.com/erfanmola" target="_blank">
+                            <i class="icon-instagram"></i>
+صفحه اینستاگرام
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>گیت‌هاب</h4>
+
+                        <p>این وبسایت به‌صورت رایگان و آزاد منتشر شده و قابل دسترس می‌باشد، درصورت لزوم می‌توانید آن را در گیت‌هاب مشاهده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://github.com/erfanmola" target="_blank">
+                            <i class="icon-github"></i>
+مشاهده گیت‌هاب
+                        </a>
+                    </li>
+                </ul>
+
+                <p id="copyright">طراحی و توسعه با <i class="icon-heart"></i> توسط <a href="https://erfanmola.ir" target="_blank">عرفان مولا</a></p>
+
+                <a href="https://erfanmola.ir" target="_blank" class="neumorph-1 clickable tablet-and-up" id="EM-Copyright">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1454 1015">
+                        <path data-name="Color Fill 1" d="M706 0v122H359L231 251h475v121H235l471 472v171Q353.035 662.53 0 310L310 0h396zm42 0h397l309 311h-2q-129.48 129.488-259 259h-1V400q44.49-45 89-90-16.995-17-34-34-76.485-76.992-153-154h-5v553L965 798h-1l1-676c-.33-.333-.67-.667-1-1l-93 1v771q-61.494 60.99-123 122V0z" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                </a>
+
+            </div>
+        </footer>
+
+        <script>
+            let toggle_screens = document.getElementsByClassName('toggle-screen');
+            let toggle_screen_icons = document.getElementsByClassName('toggle-screen-icon');
+
+            for (let x = 0; x < toggle_screens.length; x++) {
+
+                toggle_screens[x].addEventListener('click', function () {
+
+                    var elem = elem || document.documentElement;
+                    if (!document.fullscreenElement && !document.mozFullScreenElement &&
+                        !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                        if (elem.requestFullscreen) {
+                            elem.requestFullscreen();
+                        } else if (elem.msRequestFullscreen) {
+                            elem.msRequestFullscreen();
+                        } else if (elem.mozRequestFullScreen) {
+                            elem.mozRequestFullScreen();
+                        } else if (elem.webkitRequestFullscreen) {
+                            elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                        }
+                    } else {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitExitFullscreen) {
+                            document.webkitExitFullscreen();
+                        }
+                    }
+
+                })
+
+            }
+
+            let Fullscreen = false;
+
+            document.addEventListener("fullscreenchange", function() {
+                if (Fullscreen) {
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-minimize');
+                        toggle_screens[x].classList.remove('inset-1');
+                        toggle_screen_icons[x].classList.add('icon-maximize');
+                        toggle_screens[x].title = "حالت تمام‌صفحه";
+                    }
+                    Fullscreen = false;
+                }else{
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-maximize');
+                        toggle_screen_icons[x].classList.add('icon-minimize');
+                        toggle_screens[x].classList.add('inset-1');
+                        toggle_screens[x].title = "حالت عادی";
+                    }
+                    Fullscreen = true;
+                }
+            });
+
+            var _Cookies$get;
+
+            let Mode = (_Cookies$get = Cookies.get('developix-mode')) !== null && _Cookies$get !== void 0 ? _Cookies$get : 'light';
+
+            const ModeSwitch = document.getElementById('mode-switch-toggle');
+
+            ModeSwitch.addEventListener('change', (event) => {
+                SwitchMode();
+            });
+
+            const SwitchMode = (reverse = false) => {
+
+                if (reverse) {
+                    if (Mode === 'light') {
+                        setLightMode();
+                    }else{
+                        setDarkMode();
+                    }
+                }else{
+                    if (Mode === 'light') {
+                        setDarkMode();
+                    }else{
+                        setLightMode();
+                    }
+                }
+
+            };
+
+            const setDarkMode = () => {
+                document.body.classList.add('dark');
+                Cookies.set('developix-mode', 'dark' , { expires: 30, path: '' });
+                Mode = 'dark';
+                ModeSwitch.checked = false;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#2d2d2d");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#2d2d2d");
+                NotifyMode('dark');
+            };
+
+            const setLightMode = () => {
+                document.body.classList.remove('dark');
+                Cookies.set('developix-mode', 'light', { expires: 30, path: '' });
+                Mode = 'light';
+                ModeSwitch.checked = true;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#ebebeb");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#ebebeb");
+                NotifyMode('light');
+            };
+
+            SwitchMode(true);
+
+            window.addEventListener("storage", ReceiveMode);
+
+            function NotifyMode(message) {
+                localStorage.setItem('message',JSON.stringify(message));
+            }
+
+            function ReceiveMode(ev) {
+                if (ev.key === 'message') {
+                    let message = JSON.parse(ev.newValue);
+
+                    switch (message) {
+                        case "dark" :
+                            setDarkMode();
+                            break;
+                        case "light" :
+                            setLightMode();
+                            break;
+                    }
+
+                }
+            }
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2YQLRZVB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DR2YQLRZVB');
+        </script>
+
+        <script>NProgress.done()</script>
+
+    </body>
+</html>

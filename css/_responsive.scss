@@ -1,0 +1,350 @@
+@media only screen and (min-width: 1080px) {
+
+  .desktop-only, .tablet-and-up {
+    display: block;
+  }
+
+  .mobile-only, .tablet-only, .tablet-and-down {
+    display: none !important;
+  }
+
+  html, body {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .tablet-only, .tablet-and-up, .tablet-and-down {
+    display: block !important;
+  }
+
+  .mobile-only, .desktop-only {
+    display: none !important;
+  }
+
+  .holder {
+    width: 96% !important;
+    margin: auto 2% !important;
+  }
+
+  html, body {
+    font-size: 14px;
+  }
+
+  #section-groups {
+    ul {
+      li {
+        width: 30%;
+        margin: 18px 1.666%;
+      }
+    }
+  }
+
+  #header {
+    padding: 32px 12px 92px !important;
+
+    #brand {
+      height: 38px;
+
+      #dp-logo {
+        height: 38px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-right: 14px;
+        line-height: 38px;
+        height: 38px;
+      }
+    }
+
+    #menu {
+      margin-right: 32px !important;
+    }
+
+  }
+
+  #section-websites {
+    ul {
+      li {
+
+        &.open {
+          width: 96% !important;
+          top: 12px !important;
+          max-height: calc(100vh - 48px) !important;
+          left: 2% !important;
+          right: 2% !important;
+          margin: 0 !important;
+        }
+
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+
+  .line-svg {
+    display: none;
+  }
+
+  #section-groups {
+    ul {
+      li {
+        width: 44%;
+        margin: 18px 3%;
+      }
+    }
+  }
+
+  #header {
+    padding: 32px 12px 82px !important;
+
+    #brand {
+      height: 36px;
+
+      #dp-logo {
+        height: 36px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-right: 14px;
+        line-height: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .toggle-btn {
+    margin-right: 0 !important;
+  }
+
+  #section-bots {
+
+    li:not(.vl) {
+      width: 46%;
+      margin: 12px calc(2% - 4px);
+
+      h3 {
+        font-size: 1.2rem;
+        padding-right: 12px;
+      }
+    }
+
+  }
+
+  #section-tutorials {
+    li {
+      width: 44%;
+      margin: 12px 3%;
+    }
+  }
+
+  #section-commands {
+    ul {
+      li {
+        padding: 0 16px !important;
+        margin: 12px 0 !important;
+      }
+
+      hr {
+        width: 70% !important;
+        margin: 12px 15% !important;
+      }
+
+      table {
+        width: 90% !important;
+        margin: 12px 5% !important;
+        border-radius: 12px;
+        padding: 12px !important;
+
+        td {
+          padding: 6px 3px !important;
+        }
+
+        th {
+          padding-bottom: 18px !important;
+        }
+      }
+    }
+
+    .note {
+      padding: 0 12px !important;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  .mobile-only, .tablet-and-down {
+    display: block !important;
+  }
+
+  .desktop-only, .tablet-only, .tablet-and-up {
+    display: none !important;
+  }
+
+  #section-groups {
+    ul {
+      li {
+        width: 80%;
+        margin: 12px 10%;
+      }
+    }
+  }
+
+  #header {
+    padding: 32px 12px 64px !important;
+
+    #brand {
+      height: 32px;
+
+      #dp-logo {
+        height: 32px;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        margin-right: 12px;
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  #section-intro {
+
+    #iphone-container {
+      float: left;
+      width: 60%;
+      margin: 12px 20%;
+    }
+
+    #intro-container {
+      float: right;
+      width: 86%;
+      margin: 12px 7%;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
+  }
+
+  .sections {
+    padding: 16px 0;
+  }
+
+  #section-websites {
+    ul {
+      padding: 0 !important;
+
+      li {
+        float: left;
+        width: 80%;
+        margin: 12px 10%;
+        padding: 12px;
+      }
+    }
+  }
+
+  #section-bots {
+
+    li:not(.vl) {
+      width: 90% !important;
+      margin: 12px 5% 24px !important;
+    }
+
+    #vl {
+      display: none !important;
+    }
+
+  }
+
+  #section-team {
+
+    li.item-team {
+      width: 76% !important;
+      margin: 12px 12% !important;
+    }
+
+  }
+
+  footer {
+    margin: 24px 0 0 !important;
+    padding: 12px 0 !important;
+
+    ul {
+      padding: 12px 0 !important;
+
+      li {
+        width: 80% !important;
+        margin: 12px 10%;
+        padding: 12px !important;
+      }
+    }
+
+    #copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 0 !important;
+      font-size: 1rem !important;
+    }
+
+  }
+
+  #section-intro-bot {
+
+    #intro-container {
+      width: 80%;
+      margin: 16px 10%;
+
+      h2 {
+        margin: 16px 0;
+        font-size: 1.25rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .bot-image {
+      width: 40% !important;
+      margin: 0 30% !important;
+    }
+
+  }
+
+  #section-levels {
+    .masonry {
+      width: 80% !important;
+      margin: 0 10% !important;
+      padding: 0 !important;
+    }
+  }
+
+  #section-basics {
+
+    li {
+      margin: 0 10% !important;
+      width: 80%;
+    }
+
+  }
+
+  #section-tutorials {
+    li {
+      width: 80%;
+      margin: 12px 10%;
+    }
+  }
+
+}

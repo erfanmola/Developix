@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>دِوِلوپیکس</title>
+        <meta name="description" content="خدمات نوین برنامه‌نویسی">
+        <meta name="keywords" content="دولوپیکس,برنامه نویسی,IRDevelopers,گروه های برنامه‌نویسی,برنامه نویسان ایرانی,گروه برنامه نویسی تلگرام,برنامه نویس ایرانی,برنامه نویسان ایرانی,برنامه‌نویسی,Developix">
+        <meta name="author" content="Erfan Mola">
+        <meta property="og:locale" content="fa_IR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="دِوِلوپیکس" />
+        <meta property="og:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta property="og:site_name" content="دِوِلوپیکس" />
+        <meta property="og:image" content="/icons/android-icon-192x192.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta name="twitter:title" content="دِوِلوپیکس" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ebebeb">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ebebeb">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/bundle.js"></script>
+    </head>
+
+    <body>
+
+        <script>
+            NProgress.start();
+
+            document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                    return false;
+                }
+            }
+
+            window.addEventListener("contextmenu", e => {
+                e.preventDefault();
+                return false;
+            });
+        </script>
+
+        <div class="holder">
+
+            <header id="header">
+
+                <a href="/" id="brand">
+                    <svg id="dp-logo" viewBox="0 0 856 636" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d=" M 208.01 0.00 L 208.73 0.00 C 210.84 1.57 213.54 0.88 215.97 1.01 C 266.98 0.98 317.99 1.01 369.00 1.00 C 369.00 20.33 369.00 39.67 369.00 59.00 C 323.36 59.00 277.73 59.01 232.09 59.00 C 181.91 109.17 131.72 159.34 81.55 209.52 C 175.71 303.67 269.86 397.82 364.00 491.97 C 363.99 519.33 364.02 546.68 363.99 574.04 C 244.48 454.51 124.96 335.01 5.45 215.49 C 3.50 213.57 1.14 211.82 0.62 208.94 L 0.00 210.05 L 0.00 207.74 L 0.02 208.87 C 69.66 139.35 139.12 69.66 208.82 0.21 L 208.01 0.00 Z" />
+                            <path d=" M 645.93 0.00 L 647.04 0.00 C 716.73 69.57 786.26 139.31 856.00 208.83 L 856.00 208.87 C 852.20 213.15 847.42 216.58 844.49 221.57 C 727.00 339.08 609.47 456.56 492.00 574.09 C 490.59 572.74 491.09 570.71 490.97 569.01 C 491.03 543.66 490.99 518.31 490.99 492.96 C 585.47 398.47 679.95 303.99 774.44 209.51 C 724.27 159.33 674.09 109.17 623.91 59.00 C 578.27 59.00 532.64 59.00 487.00 59.00 C 487.00 39.67 487.00 20.33 487.00 1.00 C 540.42 0.95 593.85 1.10 647.27 0.93 L 645.93 0.00 Z" />
+                            <path d=" M 400.00 1.00 C 418.67 1.00 437.33 1.00 456.00 1.00 C 456.00 53.67 456.00 106.33 456.00 159.00 C 404.26 158.97 352.51 159.06 300.77 158.96 C 279.14 180.42 257.67 202.06 236.08 223.57 C 279.39 266.78 322.54 310.15 365.92 353.29 C 366.05 379.59 366.06 405.90 365.91 432.20 C 337.27 404.12 309.14 375.51 280.69 347.22 C 250.67 317.26 220.78 287.18 190.68 257.32 C 179.74 245.70 168.13 234.73 157.00 223.30 C 197.15 183.26 237.26 143.17 277.29 103.00 C 318.19 103.00 359.10 103.00 400.00 103.00 C 400.00 69.00 400.00 35.00 400.00 1.00 Z" />
+                            <path d=" M 488.00 103.00 C 518.06 103.03 548.13 102.94 578.18 103.04 C 579.75 102.88 580.77 104.21 581.81 105.15 C 621.15 144.65 660.72 183.91 699.99 223.47 C 687.10 236.07 674.55 249.01 661.70 261.64 C 659.20 263.48 656.84 265.49 654.77 267.80 C 588.78 333.79 522.78 399.78 456.80 465.77 C 455.57 466.79 456.14 468.57 455.97 469.96 C 456.04 515.97 455.97 561.98 456.00 607.99 C 446.75 617.35 437.29 626.53 428.15 636.00 L 428.03 636.00 C 418.65 626.70 409.33 617.32 399.99 607.97 C 400.09 553.75 399.83 499.51 400.12 445.30 L 401.43 444.48 C 401.06 444.21 400.33 443.68 399.96 443.41 C 473.45 369.98 546.90 296.51 620.35 223.03 C 598.99 201.67 577.67 180.26 556.25 158.96 C 533.50 159.05 510.75 158.98 488.00 159.00 C 488.00 140.33 488.00 121.67 488.00 103.00 Z" />
+                        </g>
+                    </svg>
+
+                    <h1 class="bold">دِوِلوپیکس</h1>
+                </a>
+
+                <ul id="menu" class="tablet-and-up">
+                    <li class="neumorph-1 clickable"><a href="#section-intro">معرفی</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-groups">گروه‌ها</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-websites">وبسایت‌ها</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-bots">ربات‌ها</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-team">تیم</a></li>
+                </ul>
+
+                <ul id="widgets">
+                    <li class="neumorph-1 clickable desktop-only toggle-screen" title="حالت تمام‌صفحه"><i class="icon-maximize toggle-screen-icon"></i></li>
+                    <li class="toggle-btn" id="mode-switch">
+                        <input type="checkbox" id="mode-switch-toggle" checked>
+                        <span></span>
+                    </li>
+                </ul>
+
+            </header>
+
+            <section id="section-intro" class="sections">
+
+                <div id="iphone-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" fill="none"><style><![CDATA[.B{color-interpolation-filters:sRGB}.C{flood-opacity:0}.D{fill:#f0f0f3}.E{stroke-linejoin:round}]]></style><g filter="url(#A)"><circle cx="260" cy="300" r="256" transform="rotate(90 260 300)" fill="url(#O)"/></g><path d="M393.5 14.4h-268V580h268V14.4z" class="D"/><path d="M393.1 14.8H125.9V579.6H393.1V14.8Z" stroke="#707070" stroke-width=".8"/><g clip-path="url(#Q)" class="D"><g filter="url(#B)"><path d="M168.222 455H58.333c-13.193 0-23.889 7.275-23.889 16.25v110.5c0 8.975 10.695 16.25 23.889 16.25h109.889c13.194 0 23.889-7.275 23.889-16.25v-110.5c0-8.975-10.695-16.25-23.889-16.25z"/></g></g><g clip-path="url(#R)"><g filter="url(#C)"><path d="M402.148 168.225c-11.911-20.631-38.292-27.699-58.923-15.788s-27.699 38.292-15.788 58.922 38.292 27.7 58.922 15.789 27.7-38.292 15.789-58.923z" fill="#eee"/></g><g stroke="#fb7575" stroke-width="2" class="E"><path d="M350 174.444c0-1.974.784-3.867 2.179-5.263a7.43 7.43 0 0 1 5.26-2.181h7.439v14.889h-7.439c-1.973 0-3.865-.784-5.26-2.18a7.45 7.45 0 0 1-2.179-5.265z"/><path d="M364.878 167h7.439c.977 0 1.945.193 2.847.567a7.41 7.41 0 0 1 2.413 1.614c.691.691 1.239 1.511 1.613 2.415s.566 1.871.566 2.848-.192 1.946-.566 2.849a7.46 7.46 0 0 1-1.613 2.416c-.69.691-1.51 1.239-2.413 1.613s-1.87.567-2.847.567h-7.439V167z"/><path d="M364.878 189.333a7.47 7.47 0 0 1 .566-2.849c.374-.903.922-1.723 1.613-2.415a7.43 7.43 0 0 1 2.413-1.613 7.44 7.44 0 0 1 2.847-.567c.977 0 1.945.193 2.847.567s1.723.922 2.413 1.613a7.46 7.46 0 0 1 1.613 2.415 7.45 7.45 0 0 1 .566 2.849c0 .978-.192 1.946-.566 2.849a7.46 7.46 0 0 1-1.613 2.416c-.69.691-1.51 1.239-2.413 1.613a7.44 7.44 0 0 1-5.694 0c-.902-.374-1.722-.922-2.413-1.613a7.46 7.46 0 0 1-1.613-2.416c-.373-.903-.566-1.871-.566-2.849zM350 204.222a7.45 7.45 0 0 1 2.179-5.264c1.395-1.396 3.287-2.18 5.26-2.18h7.439v7.444c0 1.975-.784 3.868-2.179 5.264a7.43 7.43 0 0 1-10.52 0c-1.395-1.396-2.179-3.289-2.179-5.264z"/><path d="M350 189.333a7.45 7.45 0 0 1 2.179-5.264c1.395-1.396 3.287-2.18 5.26-2.18h7.439v14.889h-7.439c-1.973 0-3.865-.784-5.26-2.18a7.45 7.45 0 0 1-2.179-5.265z"/></g></g><g filter="url(#D)" class="D"><path d="M226.237 303.724c0-28.45-23.063-51.513-51.513-51.513s-51.513 23.063-51.513 51.513 23.063 51.513 51.513 51.513 51.513-23.063 51.513-51.513z"/></g><path d="M155 314.333h19.652H155zm0 0v-19.666h39.305V275H155l39.305 39.333h-19.653H155zm0 0L174.652 334v-19.667H155z" stroke="#745ff2" stroke-width="2" class="E"/><path id="svg-frame" d="M406.166 136.634V42.966C406.166 18.966 387.5.8 363.5.8H156.166C132.166.8 112 19.05 112 42.966v36.166h-2.5v22.5h2.5v20.833h-2.5v42.5h2.5v12.5h-2.5v42.5h2.5v334.5c0 24 20.25 44.667 44.166 44.667H363.5c24 0 42.666-20.667 42.666-44.667V205.8h3.334v-69.166h-3.334zM294.75 19.55c0 .725-.215 1.434-.618 2.037a3.67 3.67 0 0 1-1.646 1.35c-.67.277-1.407.35-2.118.209s-1.365-.491-1.877-1.003a3.67 3.67 0 0 1-1.004-1.877c-.141-.711-.069-1.448.209-2.118a3.66 3.66 0 0 1 1.35-1.645c.603-.403 1.312-.618 2.037-.618.97.008 1.898.398 2.583 1.083a3.7 3.7 0 0 1 1.084 2.583h0zm-49.584-.417h32.5c1.417 0 2.5.834 2.5 2.08s-1.083 2.08-2.5 2.08h-32.5c-1.416 0-2.5-.834-2.5-2.08s1.084-2.079 2.5-2.079v-.001zM390.334 552.55c0 14.583-10.75 27.416-25.334 27.416H157.5c-14.583 0-27.166-12.833-27.166-27.416V41.466c0-14.5 12.666-24.834 27.166-24.834h24c5.083 0 6.917-.75 7.25 5.666a12.5 12.5 0 0 0 3.334 8c2.122 2.273 4.79 3.966 7.75 4.917 2.138.805 4.386 1.283 6.667 1.417h109.582c2.251 0 4.583-.917 6.667-1.583a18.23 18.23 0 0 0 7.75-4.75c2.073-2.088 3.266-4.892 3.334-7.834.333-6.417 2.166-5.92 7.25-5.92h23.75c14.584 0 25.334 10.334 25.334 24.834v511.17h.166z" fill="#000"/><path d="M277.666 19.134h-32.5c-1.416 0-2.5.834-2.5 2.08s1.084 2.08 2.5 2.08h32.5c1.417 0 2.5-.834 2.5-2.08s-1.166-2.08-2.5-2.08zm13.417 4.082a3.67 3.67 0 0 0 3.667-3.666 3.67 3.67 0 0 0-3.667-3.666c-2.025 0-3.666 1.641-3.666 3.666s1.641 3.666 3.666 3.666z" fill="#f2f2f2"/><path d="M299.9 568.8h-81.6a2.4 2.4 0 1 0 0 4.8h81.6a2.4 2.4 0 1 0 0-4.8z" fill="#999"/><g filter="url(#E)" class="D"><path d="M263.932 478.212h-32.22c-6.355 0-11.507 5.156-11.507 11.515v32.243c0 6.359 5.152 11.515 11.507 11.515h32.22c6.355 0 11.506-5.156 11.506-11.515v-32.243c0-6.359-5.151-11.515-11.506-11.515z"/></g><g stroke="#fb7575" class="E"><path d="M239.767 498.364a4.03 4.03 0 0 1 1.18-2.85c.755-.756 1.779-1.181 2.848-1.181h4.027v8.061h-4.027c-1.069 0-2.093-.425-2.848-1.18a4.03 4.03 0 0 1-1.18-2.85z"/><path d="M247.822 494.333h4.027a4.04 4.04 0 0 1 1.542.307c.488.203.932.5 1.306.874a4.02 4.02 0 0 1 .873 1.307 4.04 4.04 0 0 1 0 3.085c-.202.489-.499.933-.873 1.308s-.818.671-1.306.873a4.02 4.02 0 0 1-1.542.307h-4.027v-8.061z"/><path d="M247.822 506.424a4.04 4.04 0 0 1 .306-1.542 4.05 4.05 0 0 1 .874-1.308c.374-.374.818-.671 1.306-.873a4.03 4.03 0 0 1 1.541-.307 4.02 4.02 0 0 1 1.542.307c.488.202.932.499 1.306.873s.671.819.873 1.308a4.04 4.04 0 0 1 .307 1.542c0 .529-.105 1.054-.307 1.543a4.02 4.02 0 0 1-.873 1.307c-.374.374-.818.671-1.306.874a4.04 4.04 0 0 1-1.542.307c-.529 0-1.052-.105-1.541-.307s-.932-.5-1.306-.874-.671-.818-.874-1.307-.306-1.014-.306-1.543zm-8.055 8.061a4.03 4.03 0 0 1 1.18-2.85c.755-.756 1.779-1.18 2.848-1.18h4.027v4.03a4.03 4.03 0 0 1-1.18 2.85c-.755.756-1.779 1.18-2.847 1.18s-2.093-.424-2.848-1.18a4.03 4.03 0 0 1-1.18-2.85z"/><path d="M239.767 506.424a4.03 4.03 0 0 1 1.18-2.85c.755-.755 1.779-1.18 2.848-1.18h4.027v8.061h-4.027c-1.069 0-2.093-.425-2.848-1.181a4.03 4.03 0 0 1-1.18-2.85z"/></g><g filter="url(#F)" class="D"><path d="M355.986 478.212h-32.219c-6.355 0-11.507 5.156-11.507 11.515v32.243c0 6.359 5.152 11.515 11.507 11.515h32.219c6.355 0 11.507-5.156 11.507-11.515v-32.243c0-6.359-5.152-11.515-11.507-11.515z"/></g><g filter="url(#G)"><path d="M353.685 480.515h-27.617c-6.355 0-11.506 5.156-11.506 11.515v27.637c0 6.359 5.151 11.515 11.506 11.515h27.617c6.355 0 11.507-5.156 11.507-11.515V492.03c0-6.359-5.152-11.515-11.507-11.515z" fill="#eee"/></g><path d="M331.822 510.455h8.055-8.055zm0 0v-8.061h16.11v-8.061h-16.11l16.11 16.122h-8.055-8.055zm0 0l8.055 8.06v-8.06h-8.055z" stroke="#745ff2" class="E"/><g clip-path="url(#S)"><g filter="url(#H)" class="D"><path d="M147.273 166v41.455c0 11.447 9.28 20.727 20.727 20.727s20.727-9.28 20.727-20.727V166c0-11.447-9.28-20.727-20.727-20.727s-20.727 9.28-20.727 20.727z"/></g><g filter="url(#I)"><path d="M149 166v41.455c0 10.493 8.507 19 19 19s19-8.507 19-19V166c0-10.493-8.507-19-19-19s-19 8.507-19 19z" fill="#eee"/></g><g filter="url(#J)" class="D"><path d="M168 152.182c-8.586 0-15.545 6.96-15.545 15.545s6.959 15.546 15.545 15.546 15.545-6.96 15.545-15.546-6.959-15.545-15.545-15.545z"/></g></g><g fill="#cfd7df"><rect x="237" y="275" width="141" height="14" rx="3"/><rect x="237" y="301" width="141" height="14" rx="3"/><rect x="278" y="327" width="100" height="14" rx="3"/><rect x="205" y="165" width="109" height="11" rx="3"/><rect x="205" y="185" width="109" height="11" rx="3"/><rect x="237" y="205" width="77" height="11" rx="3"/></g><g filter="url(#K)" class="D"><path d="M361.719 392.077H152.526c-5.251 0-9.508 4.27-9.508 9.538s4.257 9.539 9.508 9.539h209.193c5.252 0 9.509-4.271 9.509-9.539s-4.257-9.538-9.509-9.538z"/></g><g filter="url(#L)"><path d="M362.195 394.462H152.051c-3.939 0-7.132 3.202-7.132 7.153s3.193 7.154 7.132 7.154h210.144c3.939 0 7.131-3.203 7.131-7.154s-3.192-7.153-7.131-7.153z" fill="#eee"/></g><g filter="url(#M)"><path d="M240.483 394.462h-88.432c-3.939 0-7.132 3.202-7.132 7.153s3.193 7.154 7.132 7.154h88.432c3.938 0 7.131-3.203 7.131-7.154s-3.193-7.153-7.131-7.153z" fill="url(#P)"/></g><g filter="url(#N)" class="D"><path d="M359.606 74.758h-27.151a9.7 9.7 0 0 0-9.697 9.697v27.152a9.7 9.7 0 0 0 9.697 9.697h27.151a9.7 9.7 0 0 0 9.697-9.697V84.455a9.7 9.7 0 0 0-9.697-9.697z"/></g><path d="M355.766 84h-.032c-.094.07-.214.039-.321.045-2.265-.001-4.529 0-6.794-.001v2.589h6.078l6.683 6.718-12.539 12.606.001 3.663 15.916-16.002c.087-.086.191-.164.214-.292l.028.049v-.103l-.001.05-9.269-9.313.036-.009zm-19.44 0h-.05L327 93.32v.002c.169.191.381.344.511.567l15.648 15.733c.062-.06.04-.15.046-.226l-.001-3.395-12.583-12.65 6.682-6.718h6.078v-2.589c-2.372-.002-4.744.004-7.115-.003l.06-.041zm10.917.045h-2.486v7.052l6.891-.002 2.872 2.884-5.764 5.79v3.522l3.783-3.793 3.996-4.012 1.495-1.518-5.34-5.369h-5.447v-4.552zm-3.907 4.552c-1.334.001-2.669-.003-4.003.002-.07-.007-.115.052-.161.094l-5.246 5.281 1.699 1.704a2.01 2.01 0 0 1 .308.275l8.789 8.836c.054.045.029.125.036.187l-.001 6.16 1.236 1.251h.006l1.244-1.251-.005-7.261-.058-.036.065-.048-9.784-9.836 2.846-2.859 3.029.002v-2.499z" fill="#f45755"/><g fill="#cfd7df"><rect x="221" y="81" width="92" height="18" rx="3"/><rect x="140" y="103" width="173" height="14" rx="3"/></g><defs><filter id="A" x="0" y="44" width="520" height="520" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="A"/><feBlend in="SourceGraphic"/></filter><filter id="B" x="30.444" y="451" width="166.167" height="151.5" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="C" x="304.87" y="129.87" width="119.845" height="119.845" filterUnits="userSpaceOnUse" class="B"><feFlood class="C"/><feBlend in="SourceGraphic" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="1" dy="1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.15 0"/><feBlend in2="B" result="D"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.7 0"/><feBlend in2="D"/></filter><filter id="D" x="119.211" y="248.211" width="111.526" height="111.526" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="E" x="216.205" y="474.212" width="63.733" height="63.773" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="F" x="308.26" y="474.212" width="63.733" height="63.773" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="G" x="313.562" y="479.515" width="52.63" height="52.667" filterUnits="userSpaceOnUse" class="B"><feFlood class="C"/><feBlend in="SourceGraphic" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="1" dy="1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.15 0"/><feBlend in2="B" result="D"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.7 0"/><feBlend in2="D"/></filter><filter id="H" x="143.273" y="141.273" width="49.955" height="91.409" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="I" x="148" y="146" width="40" height="81.455" filterUnits="userSpaceOnUse" class="B"><feFlood class="C"/><feBlend in="SourceGraphic" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="1" dy="1"/><feGaussianBlur stdDeviation="1"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.2 0"/><feBlend in2="B" result="D"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.7 0"/><feBlend in2="D"/></filter><filter id="J" x="146.455" y="146.182" width="42.091" height="42.091" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.3 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="1"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.3 0"/><feBlend in2="B" result="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="2.5"/><feColorMatrix values="0 0 0 0 0.916667 0 0 0 0 0.916667 0 0 0 0 0.916667 0 0 0 1 0"/><feBlend in2="C"/><feBlend in="SourceGraphic"/></filter><filter id="K" x="139.018" y="388.077" width="236.711" height="27.577" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><filter id="L" x="143.919" y="393.462" width="226.407" height="16.308" filterUnits="userSpaceOnUse" class="B"><feFlood class="C"/><feBlend in="SourceGraphic" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="1" dy="1"/><feGaussianBlur stdDeviation="1"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.2 0"/><feBlend in2="B" result="D"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="C"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="C" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.7 0"/><feBlend in2="D"/></filter><filter id="M" x="142.919" y="392.462" width="106.695" height="18.308" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feGaussianBlur stdDeviation="1"/><feColorMatrix values="0 0 0 0 0.447917 0 0 0 0 0.542215 0 0 0 0 0.716667 0 0 0 0.7 0"/><feBlend in2="A"/><feBlend in="SourceGraphic"/></filter><filter id="N" x="318.758" y="70.758" width="55.046" height="55.046" filterUnits="userSpaceOnUse" class="B"><feFlood result="A" class="C"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1.5" dy="1.5"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.4 0"/><feBlend in2="A" result="B"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="-1"/><feGaussianBlur stdDeviation="1.5"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="B"/><feBlend in="SourceGraphic"/></filter><linearGradient id="O" x1="260" y1="44" x2="260" y2="556" gradientUnits="userSpaceOnUse"><stop stop-color="#f45556"/><stop offset="1" stop-color="#fd8a45"/></linearGradient><linearGradient id="P" x1="196.267" y1="394.462" x2="196.267" y2="408.769" gradientUnits="userSpaceOnUse"><stop stop-color="#f45655"/><stop offset="1" stop-color="#fc8247"/></linearGradient><clipPath id="Q"><path fill="#fff" transform="translate(130 442)" d="M0 0h86v143H0z"/></clipPath><clipPath id="R"><path fill="#fff" transform="translate(321 146)" d="M0 0h87v87H0z"/></clipPath><clipPath id="S"><path fill="#fff" transform="matrix(0 -1 1 0 130 242)" d="M0 0h114v76H0z"/></clipPath></defs></svg>
+                </div>
+
+                <div id="intro-container">
+                    <h2>معرفی</h2>
+
+                    <p>
+مجموعه دِوِلوپیکس با هدف ارائه خدمات برنامه‌نویسی و طراحی به توسعه‌دهندگان و طراحان ایرانی از سال ۱۳۹۸ شروع به فعالیت کرده است و در حال حاضر در حوزه ارائه خدمات بر بستر وب و تلگرام و سایر شبکه های اجتماعی مشغول فعالیت می‌باشد
+                    </p>
+
+                    <p style="margin-top: 16px;">
+                        سعی بر این است که با بهره‌گیری از جدیدترین روش‌ها و استاندارد های کیفیتی، بستری نوین و یکپارچه‌ای را برای توسعه‌دهندگان و طراحان فراهم کند
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="section-groups" class="sections">
+
+                <h2 class="title">گروه‌ها</h2>
+
+                <ul>
+                    <li class="neumorph-1 clickable" id="point-c">
+                        <a href="https://t.me/IRDevelopersGP" target="_blank">
+                            <i class="icon-command"></i>
+                            <h3>گفتگوی توسعه‌دهندگان</h3>
+                            <span>عمومی</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/WebDevelopersGP" target="_blank">
+                            <i class="icon-globe"></i>
+                            <h3>توسعه‌دهندگان وب</h3>
+                            <span>وب</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/AndroidDevelopersGP" target="_blank">
+                            <i class="icon-smartphone"></i>
+                            <h3>توسعه‌دهندگان اندروید</h3>
+                            <span>موبایل</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/IRBotGP" target="_blank">
+                            <i class="icon-tel2"></i>
+                            <h3>توسعه‌دهندگان ربات</h3>
+                            <span>ربات تلگرام</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable" id="point-b">
+                        <a href="https://t.me/IRPythonGP" target="_blank">
+                            <i class="icon-py"></i>
+                            <h3>توسعه‌دهندگان پایتون</h3>
+                            <span>پایتون</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/GameDevelopersGP" target="_blank">
+                            <i class="icon-ga4"></i>
+                            <h3>توسعه‌دهندگان بازی</h3>
+                            <span>بازی‌سازی</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/IRWordpressGP" target="_blank">
+                            <i class="icon-wordpress"></i>
+                            <h3>کاربران وردپرس</h3>
+                            <span>وردپرس</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/IRDesignGP" target="_blank">
+                            <i class="icon-pen-tool"></i>
+                            <h3>طراحی و رابط‌کاربری</h3>
+                            <span>گرافیک</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/IRLinuxGP" target="_blank">
+                            <i class="icon-linux-2"></i>
+                            <h3>کاربران گنو/لینوکس</h3>
+                            <span>گنو/لینوکس</span>
+                        </a>
+                    </li>
+
+                    <li class="neumorph-1 clickable">
+                        <a href="https://t.me/IRNetworkGP" target="_blank">
+                            <i class="icon-shield"></i>
+                            <h3>امنیت و شبکه</h3>
+                            <span>امنیت</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <hr>
+
+            <section id="section-websites" class="sections">
+
+                <h2 class="title">وبسایت‌ها</h2>
+
+                <ul>
+                    <li class="neumorph-1 clickable item-website" id="point-d" >
+
+                        <button></button>
+
+                        <div>
+                            <img src="assets/images/screenshots/Smusher-Thumbnail.png" alt="اسموشر">
+                        </div>
+
+                        <h3>اسموشر</h3>
+
+                        <a href="https://smusher.ir" target="_blank">مشاهده وبسایت</a>
+
+                    </li>
+
+                    <li class="neumorph-1 clickable item-website" id="point-e">
+
+                        <button></button>
+
+                        <div>
+                            <img src="assets/images/screenshots/Ronio-Thumbnail.png" alt="رونیو">
+                        </div>
+
+                        <h3>رونیو</h3>
+
+                        <a href="https://ronio.ir" target="_blank">مشاهده وبسایت</a>
+
+                    </li>
+
+                    <li class="neumorph-1 clickable item-website" id="point-f">
+
+                        <button></button>
+
+                        <div>
+                            <img src="assets/images/screenshots/Filito-Thumbnail.png" alt="فایلیتو">
+                        </div>
+
+                        <h3>فایلیتو</h3>
+
+                        <a href="https://filito.ir" target="_blank">مشاهده وبسایت</a>
+
+                    </li>
+                </ul>
+
+            </section>
+
+            <hr>
+
+            <section id="section-bots" class="sections">
+
+                <h2 class="title">ربات‌ها</h2>
+
+                <ul>
+
+                    <li>
+                        <img id="point-g" class="neumorph-1 no-select" src="assets/images/bots/IRDevelopers.png" alt="IRDevelopers">
+                        <h3>مجموعه توسعه‌دهندگان</h3>
+
+                        <p>مدیریت هوشمند گروه</p>
+                        <p>ضد اسپم و NSFW</p>
+                        <p>دسته‌بندی سوالات</p>
+                        <p>درجه‌بندی کاربران</p>
+                        <p>تفکیک دسترسی‌ها</p>
+                        <p>سیستم مدیریت رسانه</p>
+                        <p>سیستم پیام‌خصوصی</p>
+                        <p>چالش های برنامه‌نویسی</p>
+                        <p>چالش های ریاضی</p>
+                        <p>بازی منچ</p>
+
+                        <a class="neumorph-1 clickable" href="https://t.me/IRDevelopersBot" target="_blank">مشاهده ربات</a>
+                        <a class="neumorph-1 clickable" href="/documentation/IRDevelopersBot" target="_blank">مطالعه مستندات</a>
+                    </li>
+
+                    <li id="vl"></li>
+
+                    <li>
+                        <img class="neumorph-1 no-select" src="assets/images/bots/Unkown.png" alt="Codilo">
+                        <h3>مجموعه کدیلو</h3>
+
+                        <p>به‌زودی ...</p>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <hr>
+
+            <section id="section-team" class="sections">
+
+                <h2 class="title">تیم</h2>
+
+                <ul>
+                    <li class="neumorph-1 item-team">
+                        <img class="neumorph-1 no-select" src="assets/images/team/maryamshahmohammadi.jpeg" alt="Maryam ShahMohammadi">
+                        <a href="https://mrysh.ir" target="_blank"><h3>مریم شاه‌محمدی</h3></a>
+                        <ul>
+                            <li class="neumorph-1 clickable"><a href="https://github.com/maryamshm" target="_blank"><i class="icon-github"></i></a></li>
+                            <li class="neumorph-1 clickable"><a href="mailto:hi@mrysh.ir" target="_blank"><i class="icon-mail"></i></a></li>
+                        </ul>
+                        <span>سرپرست</span>
+                    </li>
+
+                    <li class="neumorph-1 item-team" id="point-h">
+                        <img class="neumorph-1 no-select" src="assets/images/team/erfanmola.jpeg" alt="Erfan Mola">
+                        <a href="https://erfanmola.ir" target="_blank"><h3>عرفان مولا</h3></a>
+                        <ul>
+                            <li class="neumorph-1 clickable"><a href="https://instagram.com/erfanmola" target="_blank"><i class="icon-instagram"></i></a></li>
+                            <li class="neumorph-1 clickable"><a href="https://t.me/erfanmola" target="_blank"><i class="icon-tel2"></i></a></li>
+                            <li class="neumorph-1 clickable"><a href="https://github.com/erfanmola" target="_blank"><i class="icon-github"></i></a></li>
+                            <li class="neumorph-1 clickable"><a href="mailto:hi@erfanxd.ir" target="_blank"><i class="icon-mail"></i></a></li>
+                        </ul>
+                        <span>سرپرست</span>
+                    </li>
+
+                    <li class="neumorph-1 item-team inset-1 empty">
+                        <p>جای شما</p>
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+
+        <footer class="neumorph-1 inset-1">
+            <div class="holder">
+
+                <ul>
+                    <li>
+                        <h4>وضعیت خدمات</h4>
+
+                        <p>برای مشاهده وضعیت در دسترس بودن یا نبودن سرویس های زیرمجموعه دِوِلوپیکس می‌توانید از صفحه زیر استفاده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://erfanxd.ir" target="_blank">
+                            <i class="icon-codesandbox"></i>
+                            وضعیت سرویس‌ها
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>اینستاگرام</h4>
+
+                        <p>برای مشاهده و اطلاع از مطالب و محتوا های تولید شده دِوِلوپیکس در بستر اینستاگرام می‌توانید صفحه زیر را دنبال کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://instagram.com/erfanmola" target="_blank">
+                            <i class="icon-instagram"></i>
+                            صفحه اینستاگرام
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>گیت‌هاب</h4>
+
+                        <p>این وبسایت به‌صورت رایگان و آزاد منتشر شده و قابل دسترس می‌باشد، درصورت لزوم می‌توانید آن را در گیت‌هاب مشاهده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://github.com/erfanmola" target="_blank">
+                            <i class="icon-github"></i>
+                            مشاهده گیت‌هاب
+                        </a>
+                    </li>
+                </ul>
+
+                <p id="copyright">طراحی و توسعه با <i class="icon-heart"></i> توسط <a href="https://erfanmola.ir" target="_blank">عرفان مولا</a></p>
+
+                <a href="https://erfanmola.ir" target="_blank" class="neumorph-1 clickable tablet-and-up" id="EM-Copyright">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1454 1015">
+                        <path data-name="Color Fill 1" d="M706 0v122H359L231 251h475v121H235l471 472v171Q353.035 662.53 0 310L310 0h396zm42 0h397l309 311h-2q-129.48 129.488-259 259h-1V400q44.49-45 89-90-16.995-17-34-34-76.485-76.992-153-154h-5v553L965 798h-1l1-676c-.33-.333-.67-.667-1-1l-93 1v771q-61.494 60.99-123 122V0z" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                </a>
+
+            </div>
+        </footer>
+
+        <div id="fake-blur"></div>
+
+        <script>
+            let targets = [
+                [ 'iphone-container', 'point-b', 800, 'bottom', 'bottom' ],
+                [ 'point-b', 'point-c', -250, 'right', 'bottom' ],
+                [ 'point-c', 'point-d', -250, 'right', 'top' ],
+                [ 'point-d', 'point-e', 200, 'bottom', 'bottom' ],
+                [ 'point-e', 'point-g', -200, 'right', 'top' ],
+                // [ 'point-f', 'point-g', 500, 'bottom', 'right' ],
+                [ 'point-g', 'point-h', 1000, 'bottom', 'right' ],
+            ];
+
+            let toggle_screens = document.getElementsByClassName('toggle-screen');
+            let toggle_screen_icons = document.getElementsByClassName('toggle-screen-icon');
+
+            for (let x = 0; x < toggle_screens.length; x++) {
+
+                toggle_screens[x].addEventListener('click', function () {
+
+                    var elem = elem || document.documentElement;
+                    if (!document.fullscreenElement && !document.mozFullScreenElement &&
+                        !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                        if (elem.requestFullscreen) {
+                            elem.requestFullscreen();
+                        } else if (elem.msRequestFullscreen) {
+                            elem.msRequestFullscreen();
+                        } else if (elem.mozRequestFullScreen) {
+                            elem.mozRequestFullScreen();
+                        } else if (elem.webkitRequestFullscreen) {
+                            elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                        }
+                    } else {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitExitFullscreen) {
+                            document.webkitExitFullscreen();
+                        }
+                    }
+
+                })
+
+            }
+
+            let Fullscreen = false;
+
+            document.addEventListener("fullscreenchange", function() {
+                if (Fullscreen) {
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-minimize');
+                        toggle_screens[x].classList.remove('inset-1');
+                        toggle_screen_icons[x].classList.add('icon-maximize');
+                        toggle_screens[x].title = "حالت تمام‌صفحه";
+                    }
+                    Fullscreen = false;
+                }else{
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-maximize');
+                        toggle_screen_icons[x].classList.add('icon-minimize');
+                        toggle_screens[x].classList.add('inset-1');
+                        toggle_screens[x].title = "حالت عادی";
+                    }
+                    Fullscreen = true;
+                }
+            });
+
+            var _Cookies$get;
+
+            let Mode = (_Cookies$get = Cookies.get('developix-mode')) !== null && _Cookies$get !== void 0 ? _Cookies$get : 'light';
+
+            const ModeSwitch = document.getElementById('mode-switch-toggle');
+
+            ModeSwitch.addEventListener('change', (event) => {
+                SwitchMode();
+            });
+
+            const SwitchMode = (reverse = false) => {
+
+                if (reverse) {
+                    if (Mode === 'light') {
+                        setLightMode();
+                    }else{
+                        setDarkMode();
+                    }
+                }else{
+                    if (Mode === 'light') {
+                        setDarkMode();
+                    }else{
+                        setLightMode();
+                    }
+                }
+
+            };
+
+            const setDarkMode = () => {
+                document.body.classList.add('dark');
+                Cookies.set('developix-mode', 'dark' , { expires: 30, path: '' });
+                Mode = 'dark';
+                ModeSwitch.checked = false;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#2d2d2d");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#2d2d2d");
+                NotifyMode('dark');
+            };
+
+            const setLightMode = () => {
+                document.body.classList.remove('dark');
+                Cookies.set('developix-mode', 'light', { expires: 30, path: '' });
+                Mode = 'light';
+                ModeSwitch.checked = true;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#ebebeb");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#ebebeb");
+                NotifyMode('light');
+            };
+
+            SwitchMode(true);
+
+            window.addEventListener("storage", ReceiveMode);
+
+            function NotifyMode(message) {
+                localStorage.setItem('message',JSON.stringify(message));
+            }
+
+            function ReceiveMode(ev) {
+                if (ev.key === 'message') {
+                    let message = JSON.parse(ev.newValue);
+
+                    switch (message) {
+                        case "dark" :
+                            setDarkMode();
+                            break;
+                        case "light" :
+                            setLightMode();
+                            break;
+                    }
+
+                }
+            }
+
+            function DrawArrow(a, b, d4 = null, start, end) {
+
+                let line_svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                line_svg.setAttribute("viewBox", "0 0 " +  document.body.offsetWidth + " " +  Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight ));
+                line_svg.classList.add('line-svg');
+
+                let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+
+                let d1, d2, d3, d5, d6;
+
+                if (start === 'bottom') {
+
+                    d1 = a.offsetLeft + (a.offsetWidth / 2);
+                    d2 = a.offsetTop + a.offsetHeight;
+
+                }else if (start === 'left') {
+
+                    d1 = a.offsetLeft + 10;
+                    d2 = a.offsetTop + (a.offsetHeight / 2);
+
+                }else if (start === 'right') {
+
+                    d1 = a.offsetLeft + a.offsetWidth - 10;
+                    d2 = a.offsetTop + (a.offsetHeight / 2);
+
+                }else if (start === 'top') {
+
+                    d1 = a.offsetLeft + (a.offsetWidth / 2);
+                    d2 = a.offsetTop + 10;
+
+                }
+
+                if (end === 'bottom') {
+
+                    d5 = (b.offsetLeft + (b.offsetWidth / 2)) - d1;
+                    d6 = (b.offsetTop + b.offsetHeight) - d2;
+
+                }else if (end === 'left') {
+
+                    d5 = (b.offsetLeft) - d1;
+                    d6 = (b.offsetTop + (b.offsetHeight / 2)) - d2;
+
+                }else if (end === 'right') {
+
+                    d5 = (b.offsetLeft + b.offsetWidth) - d1;
+                    d6 = (b.offsetTop + (b.offsetHeight / 2)) - d2;
+
+                }else if (end === 'top') {
+
+                    d5 = (b.offsetLeft + (b.offsetWidth / 2)) - d1;
+                    d6 = (b.offsetTop) - d2 + 10;
+                }
+
+
+                d3 = d5 / 2;
+
+                if (d4 === null) {
+                    d4 = d5;
+                }
+
+                let d = `M ${d1} ${d2} q ${d3} ${d4} ${d5} ${d6}`;
+
+                path.setAttributeNS(null, "d", d);
+                path.setAttribute('stroke', 'gray');
+                path.setAttribute('stroke-width', '5');
+                path.setAttribute('stroke-dasharray', '10');
+                path.setAttribute('fill', 'none');
+
+                line_svg.appendChild(path);
+                document.body.appendChild(line_svg);
+
+            }
+
+            function DrawArrows() {
+
+                let CurrentArrows = document.querySelectorAll('.line-svg');
+
+                for (let i = 0; i < CurrentArrows.length; i++) {
+
+                    CurrentArrows[i].remove();
+
+                }
+
+                for (let i = 0; i < targets.length; i++) {
+
+                    setTimeout(function () {
+                        DrawArrow(document.getElementById(targets[i][0]), document.getElementById(targets[i][1]), targets[i][2], targets[i][3], targets[i][4]);
+                    }, 250);
+
+                }
+
+            }
+
+            window.addEventListener('resize', function () {
+                Initialize();
+            });
+
+            let images = [];
+
+            function PreloadImages() {
+                for (let i = 0; i < arguments.length; i++) {
+                    images[i] = new Image();
+                    images[i].src = PreloadImages.arguments[i];
+                }
+            }
+
+            function HandleWebsiteItemClick() {
+
+                if (!(this.classList.contains('open')) && !(document.body.classList.contains('blur'))) {
+
+                    let img = this.children[1].children[0];
+                    if (img.src.endsWith('-Thumbnail.png')) {
+                        img.src = img.src.replace('-Thumbnail.png', '.png');
+                    }
+
+                    this.classList.remove('clickable');
+                    this.classList.add('open');
+
+                    setTimeout(function () {
+                        document.getElementById('fake-blur').style.display = 'block';
+                        document.body.classList.add('blur');
+                    }, 100);
+
+                    this.children[0].addEventListener('click', function () {
+                        CloseWebsitePopup(this.parentElement);
+                    });
+
+                }
+
+            }
+
+            function CloseWebsitePopup(element) {
+
+                let img = element.children[1].children[0];
+                if (!(img.src.endsWith('-Thumbnail.png'))) {
+                    img.src = img.src.replace('.png', '-Thumbnail.png');
+                }
+
+                element.classList.add('clickable');
+
+                element.classList.remove('open');
+
+                setTimeout(function () {
+                    document.getElementById('fake-blur').style.display = 'none';
+                    document.body.classList.remove('blur');
+                }, 100);
+
+            }
+
+            let website_items = document.querySelectorAll('.item-website');
+
+            for (let i = 0; i < website_items.length; i++) {
+
+                website_items[i].addEventListener('click', HandleWebsiteItemClick);
+
+            }
+
+            document.getElementById('fake-blur').addEventListener('click', function () {
+
+                CloseWebsitePopup(document.querySelector('.open'));
+
+            });
+
+            PreloadImages(
+                "assets/images/screenshots/Ronio.png",
+                "assets/images/screenshots/Smusher.png",
+                "assets/images/screenshots/Filito.png",
+            );
+
+            function Initialize() {
+
+                DrawArrows();
+
+                setTimeout(function () {
+                    document.getElementById('vl').style.height = (parseInt(document.getElementById('section-bots').children[1].children[0].offsetHeight)) + "px";
+                }, 250);
+
+                setTimeout(function () {
+                    document.querySelector('.item-team.empty').style.height = (parseInt(document.querySelector('.item-team').offsetHeight)) + "px";
+                    document.querySelector('.item-team.empty p').style.lineHeight = (parseInt(document.querySelector('.item-team').offsetHeight) - 24) + "px";
+                }, 250);
+
+            }
+
+            Initialize();
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2YQLRZVB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DR2YQLRZVB');
+        </script>
+
+        <script>NProgress.done()</script>
+
+    </body>
+</html>
