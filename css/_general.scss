@@ -1023,6 +1023,15 @@ footer {
         line-height: 72px;
         padding-left: 18px;
         font-size: 1.25rem;
+
+        a {
+          color: var(--accent);
+          transition: opacity .15s;
+
+          &:hover {
+            opacity: 0.75;
+          }
+        }
       }
 
       p {

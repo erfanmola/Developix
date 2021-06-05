@@ -857,6 +857,11 @@ footer {
     line-height: 72px;
     padding-left: 18px;
     font-size: 1.25rem; }
+    #section-commands ul li h4 a {
+      color: var(--accent);
+      transition: opacity .15s; }
+      #section-commands ul li h4 a:hover {
+        opacity: 0.75; }
   #section-commands ul li p {
     float: right;
     width: 100%;
