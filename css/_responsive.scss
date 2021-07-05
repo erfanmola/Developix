@@ -16,6 +16,10 @@
 
 @media only screen and (max-width: 1080px) {
 
+  #back-to-top {
+    display: none !important;
+  }
+
   .tablet-only, .tablet-and-up, .tablet-and-down {
     display: block !important;
   }
@@ -125,12 +129,11 @@
 
   #section-bots {
 
-    li:not(.vl) {
-      width: 46%;
-      margin: 12px calc(2% - 4px);
+    li {
+      padding: 16px 0 !important;
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.125rem;
         padding-right: 12px;
       }
     }
@@ -256,12 +259,11 @@
 
   #section-bots {
 
-    li:not(.vl) {
-      width: 90% !important;
-      margin: 12px 5% 24px !important;
+    ul {
+      grid-template-columns: 1fr;
     }
 
-    #vl {
+    #bot-codilobot:before {
       display: none !important;
     }
 
@@ -269,9 +271,17 @@
 
   #section-team {
 
-    li.item-team {
-      width: 76% !important;
-      margin: 12px 12% !important;
+    #team-ul {
+      padding: 12px 10%;
+      grid-template-columns: 1fr;
+
+      li {
+        margin: 16px 0;
+      }
+    }
+
+    .empty {
+      display: none;
     }
 
   }

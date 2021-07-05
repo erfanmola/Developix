@@ -34,7 +34,7 @@
         <meta name="msapplication-TileColor" content="#ebebeb">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ebebeb">
-        <link rel="stylesheet" href="../css/app.css">
+        <link rel="stylesheet" href="../css/app.css?ver=1.0.1">
         <script src="../js/bundle.js"></script>
     </head>
 
@@ -929,10 +929,10 @@
 
                     <hr>
 
-                    <li id="command-documents">
+                    <li id="command-irdevelopersbot">
                         <i class="icon-alert-circle symbol neumorph-1"></i>
-                        <h4>Documents</h4>
-                        <p>برای نمایش و معرفی مستندات ربات‌ها به‌کار می‌رود</p>
+                        <h4>IRDevelopersBot</h4>
+                        <p>برای نمایش و معرفی مستندات ربات‌ به‌کار می‌رود</p>
                     </li>
 
                     <hr>
@@ -1358,6 +1358,8 @@
             </div>
         </footer>
 
+        <div id="back-to-top"><i class="icon-chevron-up"></i></div>
+
         <script>
             let toggle_screens = document.getElementsByClassName('toggle-screen');
             let toggle_screen_icons = document.getElementsByClassName('toggle-screen-icon');
@@ -1487,6 +1489,26 @@
 
                 }
             }
+
+            function ScrollEvent() {
+
+                if (window.scrollY <= 200) {
+
+                    document.getElementById('back-to-top').style.display = 'none';
+
+                }else{
+
+                    document.getElementById('back-to-top').style.display = 'block';
+
+                }
+
+            }
+
+            document.addEventListener('scroll', ScrollEvent);
+
+            document.getElementById('back-to-top').addEventListener('click', function () {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
         </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

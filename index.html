@@ -34,7 +34,7 @@
         <meta name="msapplication-TileColor" content="#ebebeb">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ebebeb">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app.css?ver=1.0.1">
         <script src="js/bundle.js"></script>
     </head>
 
@@ -271,7 +271,7 @@
 
                 <ul>
 
-                    <li>
+                    <li id="bot-irdevelopersbot">
                         <img id="point-g" class="neumorph-1 no-select" src="assets/images/bots/IRDevelopers.png" alt="IRDevelopers">
                         <h3>مجموعه توسعه‌دهندگان</h3>
 
@@ -290,9 +290,7 @@
                         <a class="neumorph-1 clickable" href="/documentation/IRDevelopersBot" target="_blank">مطالعه مستندات</a>
                     </li>
 
-                    <li id="vl"></li>
-
-                    <li>
+                    <li id="bot-codilobot">
                         <img class="neumorph-1 no-select" src="assets/images/bots/Unkown.png" alt="Codilo">
                         <h3>مجموعه کدیلو</h3>
 
@@ -309,7 +307,7 @@
 
                 <h2 class="title">تیم</h2>
 
-                <ul>
+                <ul id="team-ul">
                     <li class="neumorph-1 item-team">
                         <img class="neumorph-1 no-select" src="assets/images/team/maryamshahmohammadi.jpeg" alt="Maryam ShahMohammadi">
                         <a href="https://mrysh.ir" target="_blank"><h3>مریم شاه‌محمدی</h3></a>
@@ -389,6 +387,8 @@
 
             </div>
         </footer>
+
+        <div id="back-to-top"><i class="icon-chevron-up"></i></div>
 
         <div id="fake-blur"></div>
 
@@ -626,7 +626,7 @@
             }
 
             window.addEventListener('resize', function () {
-                Initialize();
+                DrawArrows();
             });
 
             let images = [];
@@ -701,22 +701,27 @@
                 "assets/images/screenshots/Filito.png",
             );
 
-            function Initialize() {
+            DrawArrows();
 
-                DrawArrows();
+            function ScrollEvent() {
 
-                setTimeout(function () {
-                    document.getElementById('vl').style.height = (parseInt(document.getElementById('section-bots').children[1].children[0].offsetHeight)) + "px";
-                }, 250);
+                if (window.scrollY <= 200) {
 
-                setTimeout(function () {
-                    document.querySelector('.item-team.empty').style.height = (parseInt(document.querySelector('.item-team').offsetHeight)) + "px";
-                    document.querySelector('.item-team.empty p').style.lineHeight = (parseInt(document.querySelector('.item-team').offsetHeight) - 24) + "px";
-                }, 250);
+                    document.getElementById('back-to-top').style.display = 'none';
+
+                }else{
+
+                    document.getElementById('back-to-top').style.display = 'block';
+
+                }
 
             }
 
-            Initialize();
+            document.addEventListener('scroll', ScrollEvent);
+
+            document.getElementById('back-to-top').addEventListener('click', function () {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
         </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

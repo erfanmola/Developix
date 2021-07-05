@@ -615,10 +615,18 @@ hr {
 
 #section-bots {
 
-  li:not(.vl) {
+  ul {
+    padding: 16px 5%;
     float: right;
-    width: 40%;
-    margin: 12px calc(5% - 4px);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 24px;
+  }
+
+  li {
+    float: right;
+    padding: 16px;
 
     img {
       float: right;
@@ -664,25 +672,39 @@ hr {
     }
   }
 
-  #vl {
-    float: right;
-    width: 8px;
-    margin: 16px 0;
-    outline: none;
-    border: none;
-    box-shadow: var(--neu-shadow-inset-1);
-    height: 500px;
-    background: var(--bg-color);
+  #bot-codilobot {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      margin: 16px 0;
+      outline: none;
+      border: none;
+      box-shadow: var(--neu-shadow-inset-1);
+      height: 100%;
+      top: 0;
+      right: -18px;
+      background: var(--bg-color);
+    }
+
   }
 
 }
 
 #section-team {
 
-  li.item-team {
+  #team-ul {
     float: right;
-    width: 30%;
-    margin: 16px 1.6666%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 4%;
+    padding: 16px 2%;
+  }
+
+  li.item-team {
     overflow: hidden;
     border-radius: 15px;
 
@@ -746,17 +768,17 @@ hr {
   }
 
   li.empty {
-    position: relative;
-    height: 360px;
     padding: 12px;
 
     p {
       float: right;
       width: 100%;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       border: 5px dashed var(--dashed-color);
       border-radius: 15px;
-      line-height: calc(360px - 24px);
       text-align: center;
       font-size: 1.075rem;
     }
@@ -1163,6 +1185,38 @@ iphone {
       border-radius: 100px;
       top: 7px;
       left: 70%;
+    }
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  transition: all .15s;
+  width: 52px;
+  height: 48px;
+  line-height: 48px;
+  left: 64px;
+  bottom: 48px;
+  background: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: var(--neu-shadow-1);
+  cursor: pointer;
+  display: none;
+
+  i {
+    float: right;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-align: center;
+    font-size: 1.4375rem;
+    opacity: .9;
+    color: var(--color);
+  }
+
+  &:hover {
+    i {
+      color: var(--accent);
     }
   }
 }
