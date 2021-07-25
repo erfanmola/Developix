@@ -1209,6 +1209,17 @@ iphone notch::after {
   color: var(--accent);
 }
 
+kbd {
+  direction: ltr;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+kbd:hover {
+  color: var(--accent);
+}
+
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;

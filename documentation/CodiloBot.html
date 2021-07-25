@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>دِوِلوپیکس | ربات کدیلو</title>
+        <meta name="description" content="خدمات نوین برنامه‌نویسی">
+        <meta name="keywords" content="دولوپیکس,برنامه نویسی,IRDevelopers,گروه های برنامه‌نویسی,برنامه نویسان ایرانی,گروه برنامه نویسی تلگرام,برنامه نویس ایرانی,برنامه نویسان ایرانی,برنامه‌نویسی,Developix">
+        <meta name="author" content="Erfan Mola">
+        <meta property="og:locale" content="fa_IR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="دِوِلوپیکس | ربات کدیلو" />
+        <meta property="og:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta property="og:site_name" content="دِوِلوپیکس | ربات کدیلو" />
+        <meta property="og:image" content="/icons/android-icon-192x192.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="خدمات نوین برنامه‌نویسی" />
+        <meta name="twitter:title" content="دِوِلوپیکس | ربات کدیلو" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ebebeb">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ebebeb">
+        <link rel="stylesheet" href="../css/app.css?ver=1.0.2">
+        <script src="../js/bundle.js"></script>
+    </head>
+
+    <body>
+
+        <script>
+            NProgress.start();
+
+            document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                    return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                    return false;
+                }
+            }
+
+            window.addEventListener("contextmenu", e => {
+                e.preventDefault();
+                return false;
+            });
+        </script>
+
+        <div class="holder">
+
+            <header id="header">
+
+                <a href="/" id="brand">
+                    <svg id="dp-logo" viewBox="0 0 856 636" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d=" M 208.01 0.00 L 208.73 0.00 C 210.84 1.57 213.54 0.88 215.97 1.01 C 266.98 0.98 317.99 1.01 369.00 1.00 C 369.00 20.33 369.00 39.67 369.00 59.00 C 323.36 59.00 277.73 59.01 232.09 59.00 C 181.91 109.17 131.72 159.34 81.55 209.52 C 175.71 303.67 269.86 397.82 364.00 491.97 C 363.99 519.33 364.02 546.68 363.99 574.04 C 244.48 454.51 124.96 335.01 5.45 215.49 C 3.50 213.57 1.14 211.82 0.62 208.94 L 0.00 210.05 L 0.00 207.74 L 0.02 208.87 C 69.66 139.35 139.12 69.66 208.82 0.21 L 208.01 0.00 Z" />
+                            <path d=" M 645.93 0.00 L 647.04 0.00 C 716.73 69.57 786.26 139.31 856.00 208.83 L 856.00 208.87 C 852.20 213.15 847.42 216.58 844.49 221.57 C 727.00 339.08 609.47 456.56 492.00 574.09 C 490.59 572.74 491.09 570.71 490.97 569.01 C 491.03 543.66 490.99 518.31 490.99 492.96 C 585.47 398.47 679.95 303.99 774.44 209.51 C 724.27 159.33 674.09 109.17 623.91 59.00 C 578.27 59.00 532.64 59.00 487.00 59.00 C 487.00 39.67 487.00 20.33 487.00 1.00 C 540.42 0.95 593.85 1.10 647.27 0.93 L 645.93 0.00 Z" />
+                            <path d=" M 400.00 1.00 C 418.67 1.00 437.33 1.00 456.00 1.00 C 456.00 53.67 456.00 106.33 456.00 159.00 C 404.26 158.97 352.51 159.06 300.77 158.96 C 279.14 180.42 257.67 202.06 236.08 223.57 C 279.39 266.78 322.54 310.15 365.92 353.29 C 366.05 379.59 366.06 405.90 365.91 432.20 C 337.27 404.12 309.14 375.51 280.69 347.22 C 250.67 317.26 220.78 287.18 190.68 257.32 C 179.74 245.70 168.13 234.73 157.00 223.30 C 197.15 183.26 237.26 143.17 277.29 103.00 C 318.19 103.00 359.10 103.00 400.00 103.00 C 400.00 69.00 400.00 35.00 400.00 1.00 Z" />
+                            <path d=" M 488.00 103.00 C 518.06 103.03 548.13 102.94 578.18 103.04 C 579.75 102.88 580.77 104.21 581.81 105.15 C 621.15 144.65 660.72 183.91 699.99 223.47 C 687.10 236.07 674.55 249.01 661.70 261.64 C 659.20 263.48 656.84 265.49 654.77 267.80 C 588.78 333.79 522.78 399.78 456.80 465.77 C 455.57 466.79 456.14 468.57 455.97 469.96 C 456.04 515.97 455.97 561.98 456.00 607.99 C 446.75 617.35 437.29 626.53 428.15 636.00 L 428.03 636.00 C 418.65 626.70 409.33 617.32 399.99 607.97 C 400.09 553.75 399.83 499.51 400.12 445.30 L 401.43 444.48 C 401.06 444.21 400.33 443.68 399.96 443.41 C 473.45 369.98 546.90 296.51 620.35 223.03 C 598.99 201.67 577.67 180.26 556.25 158.96 C 533.50 159.05 510.75 158.98 488.00 159.00 C 488.00 140.33 488.00 121.67 488.00 103.00 Z" />
+                        </g>
+                    </svg>
+
+                    <h1 class="bold">دِوِلوپیکس</h1>
+                </a>
+
+                <ul id="menu" class="tablet-and-up">
+                    <li class="neumorph-1 clickable"><a href="#section-intro-bot">معرفی</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-levels">پلن‌ها</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-basics">مفاهیم</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-tutorials">آموزش</a></li>
+                    <li class="neumorph-1 clickable"><a href="#section-commands">پشتیبانی</a></li>
+                </ul>
+
+                <ul id="widgets">
+                    <li class="neumorph-1 clickable desktop-only toggle-screen" title="حالت تمام‌صفحه"><i class="icon-maximize toggle-screen-icon"></i></li>
+                    <li class="toggle-btn" id="mode-switch">
+                        <input type="checkbox" id="mode-switch-toggle" checked>
+                        <span></span>
+                    </li>
+                </ul>
+
+            </header>
+
+            <section id="section-intro-bot" class="sections">
+
+                <img class="no-select bot-image neumorph-1" src="../assets/images/bots/Codilo-HD.png" alt="IRDevelopersBot">
+
+                <div id="intro-container">
+                    <h2>ربات کدیلو</h2>
+
+                    <p>
+                        مجموعه کدیلو با هدف ارائه سورس‌کد های بومی‌سازی شده و فارسی به‌صورت رایگان، در قالب یک کانال تلگرامی شروع به فعالیت کرده است، ربات مجموعه کدیلو نیز در همین راستا و به‌جهت ارائه هوشمند فایل‌ها درحال خدمت‌رسانی به کاربران عزیز می‌باشد و نقش رابط‌کاربری مجموعه کدیلو را برای کاربران ایفا می‌کند
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="section-levels" class="sections">
+
+                <h2 class="title">پلن‌ها</h2>
+
+                <ul>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user" style="opacity: 0.75"></i>
+
+                            <h3>پلن رایگان</h3>
+
+                            <ul>
+                                <li>امتیاز رایگان روزانه</li>
+                                <li>امتیاز با دعوت از دیگران</li>
+                                <li>دریافت فایل با امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check"></i>
+
+                            <h3>پلن شش ماهه</h3>
+
+                            <ul>
+                                <li>دسترسی به همه فایل‌ها</li>
+                                <li>دسترسی بدون نیاز به امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check"></i>
+
+                            <h3>پلن یک ماهه</h3>
+
+                            <ul>
+                                <li>دسترسی به همه فایل‌ها</li>
+                                <li>دسترسی بدون نیاز به امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus" style="color: var(--accent)"></i>
+
+                            <h3>پلن یک ساله</h3>
+
+                            <ul>
+                                <li>دسترسی به همه فایل‌ها</li>
+                                <li>دسترسی بدون نیاز به امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                                <li>پشتیبانی کامل سورس‌ها</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="masonry">
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-check"></i>
+
+                            <h3>پلن سه ماهه</h3>
+
+                            <ul>
+                                <li>دسترسی به همه فایل‌ها</li>
+                                <li>دسترسی بدون نیاز به امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="neumorph-1">
+
+                            <i class="icon-user-plus" style="color: var(--accent)"></i>
+
+                            <h3>پلن دو ساله</h3>
+
+                            <ul>
+                                <li>دسترسی به همه فایل‌ها</li>
+                                <li>دسترسی بدون نیاز به امتیاز</li>
+                                <li>درخواست سورس‌کد</li>
+                                <li>پشتیبانی کامل سورس‌ها</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section id="section-basics" class="sections">
+
+                <h2 class="title">مفاهیم</h2>
+
+                <ul>
+                    <li>
+                        <div class="neumorph-1">
+                            <h3>سیستم دریافت</h3>
+
+                            <p>
+سیستم دریافت فایل کدیلو به‌صورت هوشمند طراحی شده است تا وظیفه ارائه و ارسال فایل های درخواستی کاربران را بر عهده گیرد، این سیستم به‌صورت هوشمند با در نظر گرفتن امتیازات روزانه و امتیازات بونوس کاربران و همچنین حق اشتراک یا خریداری شدن فایل توسط کاربر، اقدام به ارسال فایل به کاربر یا نمایش روش های دریافت فایل مربوطه می‌کند
+                            </p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم دعوت</h3>
+
+                            <p>
+سیستم دعوت از دوستان در کدیلو به نحوی طراحی شده است که می‌توانید با دریافت لینک دعوت، یا حتی اشتراک فایل‌‌ها به‌صورت اینلاین، دوستان خود را به ربات کدیلو دعوت کنید و پس از تایید عضویت آنها در ربات، امتیاز بونوس برای دریافت فایل کسب کنید
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="neumorph-1">
+                            <h3>سیستم امتیاز</h3>
+
+                            <p>
+سیستم امتیاز در کدیلو یک روش هوشمند برای توزیع عادلانه فایل‌ها می‌باشد، کاربرانی که ربات کدیلو را استارت کنند و عضویت آنها تایید شود، به‌صورت روزانه به تعداد مشخصی امتیاز رایگان دریافت می‌کنند که می‌توانند با استفاده از آن اقدام به دریافت رایگان فایل‌ها کنند، همچنین می‌توانند با دعوت از دوستانشان امتیاز بونوس دریافت کنند، اولویت خرج امتیاز با امتیاز روزانه و سپس امتیاز بونوس می‌باشد
+                            </p>
+                        </div>
+
+                        <div class="neumorph-1">
+                            <h3>سیستم اشتراک ویژه</h3>
+
+                            <p>
+سیستم اشتراک ویژه کدیلو پلاس سرویسی است که می‌توانید با فعال‌سازی آن به‌مدت مشخصی به‌صورت نامحدود از کدیلو استفاده کنید و بدون هیچگونه محدودیتی تمامی فایل‌ها را دریافت نمایید
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="section-tutorials" class="sections">
+
+                <h2 class="title">آموزش‌ها</h2>
+
+                <ul>
+                    <li id="tutorial-inline">
+                        <h3>اشتراک اینلاین</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/Codilo-inline.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+
+                    <li id="tutorial-invite">
+                        <h3>دعوت از کاربران</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/Codilo-invite.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+
+                    <li id="tutorial-download">
+                        <h3>دریافت مطالب</h3>
+
+                        <iphone>
+                            <notch></notch>
+                            <video controls preload="none" poster="../assets/videos/Cover.png">
+                                <source src="../assets/videos/Codilo-download.mp4" type="video/mp4">
+                            </video>
+                        </iphone>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="section-commands" class="sections">
+
+                <h2 class="title">پشتیبانی</h2>
+
+                <p class="note" style="text-align: justify">
+                    برای پشتیبانی و درخواست سورس‌کد و موارد مرتبط با محتوای کدیلو، با اکانت <a href="https://t.me/DevelopixSupport"><kbd>DevelopixSupport</kbd></a> در تلگرام در ارتباط باشید، لطفا توجه داشته باشید که پلن های رایگان و اشتراک های کدیلو پلاس زیر یک‌سال شامل پشتیبانی سورس‌کدها نمی‌شوند، همچنین برای گزارش مشکلات و ارسال پیشنهاد و موارد فنی با ایمیل <a href="mailto:hi@erfanxd.ir"><kbd>hi@ErfanXD.ir</kbd></a> در ارتباط باشید
+                </p>
+
+            </section>
+
+        </div>
+
+        <footer class="neumorph-1 inset-1">
+            <div class="holder">
+
+                <ul>
+                    <li>
+                        <h4>وضعیت خدمات</h4>
+
+                        <p>برای مشاهده وضعیت در دسترس بودن یا نبودن سرویس های زیرمجموعه دِوِلوپیکس می‌توانید از صفحه زیر استفاده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://erfanxd.ir" target="_blank">
+                            <i class="icon-codesandbox"></i>
+                            وضعیت سرویس‌ها
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>اینستاگرام</h4>
+
+                        <p>برای مشاهده و اطلاع از مطالب و محتوا های تولید شده دِوِلوپیکس در بستر اینستاگرام می‌توانید صفحه زیر را دنبال کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://instagram.com/erfanmola" target="_blank">
+                            <i class="icon-instagram"></i>
+صفحه اینستاگرام
+                        </a>
+                    </li>
+
+                    <li>
+                        <h4>گیت‌هاب</h4>
+
+                        <p>این وبسایت به‌صورت رایگان و آزاد منتشر شده و قابل دسترس می‌باشد، درصورت لزوم می‌توانید آن را در گیت‌هاب مشاهده کنید</p>
+
+                        <a class="neumorph-1 clickable" href="https://github.com/erfanmola/Developix" target="_blank">
+                            <i class="icon-github"></i>
+مشاهده گیت‌هاب
+                        </a>
+                    </li>
+                </ul>
+
+                <p id="copyright">طراحی و توسعه با <i class="icon-heart"></i> توسط <a href="https://erfanmola.ir" target="_blank">عرفان مولا</a></p>
+
+                <a href="https://erfanmola.ir" target="_blank" class="neumorph-1 clickable tablet-and-up" id="EM-Copyright">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1454 1015">
+                        <path data-name="Color Fill 1" d="M706 0v122H359L231 251h475v121H235l471 472v171Q353.035 662.53 0 310L310 0h396zm42 0h397l309 311h-2q-129.48 129.488-259 259h-1V400q44.49-45 89-90-16.995-17-34-34-76.485-76.992-153-154h-5v553L965 798h-1l1-676c-.33-.333-.67-.667-1-1l-93 1v771q-61.494 60.99-123 122V0z" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                </a>
+
+            </div>
+        </footer>
+
+        <div id="back-to-top"><i class="icon-chevron-up"></i></div>
+
+        <script>
+            let toggle_screens = document.getElementsByClassName('toggle-screen');
+            let toggle_screen_icons = document.getElementsByClassName('toggle-screen-icon');
+
+            for (let x = 0; x < toggle_screens.length; x++) {
+
+                toggle_screens[x].addEventListener('click', function () {
+
+                    var elem = elem || document.documentElement;
+                    if (!document.fullscreenElement && !document.mozFullScreenElement &&
+                        !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                        if (elem.requestFullscreen) {
+                            elem.requestFullscreen();
+                        } else if (elem.msRequestFullscreen) {
+                            elem.msRequestFullscreen();
+                        } else if (elem.mozRequestFullScreen) {
+                            elem.mozRequestFullScreen();
+                        } else if (elem.webkitRequestFullscreen) {
+                            elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                        }
+                    } else {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitExitFullscreen) {
+                            document.webkitExitFullscreen();
+                        }
+                    }
+
+                })
+
+            }
+
+            let Fullscreen = false;
+
+            document.addEventListener("fullscreenchange", function() {
+                if (Fullscreen) {
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-minimize');
+                        toggle_screens[x].classList.remove('inset-1');
+                        toggle_screen_icons[x].classList.add('icon-maximize');
+                        toggle_screens[x].title = "حالت تمام‌صفحه";
+                    }
+                    Fullscreen = false;
+                }else{
+                    for (let x = 0; x < toggle_screens.length; x++) {
+                        toggle_screen_icons[x].classList.remove('icon-maximize');
+                        toggle_screen_icons[x].classList.add('icon-minimize');
+                        toggle_screens[x].classList.add('inset-1');
+                        toggle_screens[x].title = "حالت عادی";
+                    }
+                    Fullscreen = true;
+                }
+            });
+
+            var _Cookies$get;
+
+            let Mode = (_Cookies$get = Cookies.get('developix-mode')) !== null && _Cookies$get !== void 0 ? _Cookies$get : 'light';
+
+            const ModeSwitch = document.getElementById('mode-switch-toggle');
+
+            ModeSwitch.addEventListener('change', (event) => {
+                SwitchMode();
+            });
+
+            const SwitchMode = (reverse = false) => {
+
+                if (reverse) {
+                    if (Mode === 'light') {
+                        setLightMode();
+                    }else{
+                        setDarkMode();
+                    }
+                }else{
+                    if (Mode === 'light') {
+                        setDarkMode();
+                    }else{
+                        setLightMode();
+                    }
+                }
+
+            };
+
+            const setDarkMode = () => {
+                document.body.classList.add('dark');
+                Cookies.set('developix-mode', 'dark' , { expires: 30, path: '' });
+                Mode = 'dark';
+                ModeSwitch.checked = false;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#2d2d2d");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#2d2d2d");
+                NotifyMode('dark');
+            };
+
+            const setLightMode = () => {
+                document.body.classList.remove('dark');
+                Cookies.set('developix-mode', 'light', { expires: 30, path: '' });
+                Mode = 'light';
+                ModeSwitch.checked = true;
+                document.querySelector("meta[name=theme-color]").setAttribute("content", "#ebebeb");
+                document.querySelector("meta[name=msapplication-TileColor]").setAttribute("content", "#ebebeb");
+                NotifyMode('light');
+            };
+
+            SwitchMode(true);
+
+            window.addEventListener("storage", ReceiveMode);
+
+            function NotifyMode(message) {
+                localStorage.setItem('message',JSON.stringify(message));
+            }
+
+            function ReceiveMode(ev) {
+                if (ev.key === 'message') {
+                    let message = JSON.parse(ev.newValue);
+
+                    switch (message) {
+                        case "dark" :
+                            setDarkMode();
+                            break;
+                        case "light" :
+                            setLightMode();
+                            break;
+                    }
+
+                }
+            }
+
+            function ScrollEvent() {
+
+                if (window.scrollY <= 200) {
+
+                    document.getElementById('back-to-top').style.display = 'none';
+
+                }else{
+
+                    document.getElementById('back-to-top').style.display = 'block';
+
+                }
+
+            }
+
+            document.addEventListener('scroll', ScrollEvent);
+
+            document.getElementById('back-to-top').addEventListener('click', function () {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2YQLRZVB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DR2YQLRZVB');
+        </script>
+
+        <script>NProgress.done()</script>
+
+    </body>
+</html>

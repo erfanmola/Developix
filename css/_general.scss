@@ -1220,3 +1220,15 @@ iphone {
     }
   }
 }
+
+kbd {
+  direction: ltr;
+  background: rgba(0,0,0,0.1);
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color .15s;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
