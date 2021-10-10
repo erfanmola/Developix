@@ -11,8 +11,8 @@
 }
 @font-face {
   font-family: "Developix";
-  src: url("../assets/fonts/Developix/Developix.eot?w08w3l");
-  src: url("../assets/fonts/Developix/Developix.eot?w08w3l#iefix") format("embedded-opentype"), url("../assets/fonts/Developix/Developix.ttf?w08w3l") format("truetype"), url("../assets/fonts/Developix/Developix.woff?w08w3l") format("woff"), url("../assets/fonts/Developix/Developix.svg?w08w3l#Developix") format("svg");
+  src: url("../assets/fonts/Developix/Developix.eot?c6epzt");
+  src: url("../assets/fonts/Developix/Developix.eot?c6epzt#iefix") format("embedded-opentype"), url("../assets/fonts/Developix/Developix.ttf?c6epzt") format("truetype"), url("../assets/fonts/Developix/Developix.woff?c6epzt") format("woff"), url("../assets/fonts/Developix/Developix.svg?c6epzt#Developix") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,128 +30,188 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-up:before {
+.icon-rocket:before {
+  content: "";
+}
+
+.icon-jet:before {
+  content: "";
+}
+
+.icon-speed:before {
+  content: "";
+}
+
+.icon-spaceship:before {
+  content: "";
+}
+
+.icon-fast:before {
+  content: "";
+}
+
+.icon-business:before {
+  content: "";
+}
+
+.icon-domain:before {
+  content: "";
+}
+
+.icon-csharp:before {
+  content: "";
+}
+
+.icon-go:before {
+  content: "";
+}
+
+.icon-java:before {
+  content: "";
+}
+
+.icon-deno:before {
+  content: "";
+}
+
+.icon-node-dot-js:before {
+  content: "";
+}
+
+.icon-flutter:before {
+  content: "";
+}
+
+.icon-cplusplus:before {
   content: "";
 }
 
-.icon-maximize:before {
+.icon-chevron-up:before {
   content: "";
 }
 
-.icon-minimize:before {
+.icon-maximize:before {
   content: "";
 }
 
-.icon-star:before {
+.icon-minimize:before {
   content: "";
 }
 
-.icon-wordpress:before {
+.icon-star:before {
   content: "";
 }
 
-.icon-aperture:before {
+.icon-wordpress:before {
   content: "";
 }
 
-.icon-linux-2:before {
+.icon-aperture:before {
   content: "";
 }
 
-.icon-codesandbox:before {
+.icon-linux-2:before {
   content: "";
 }
 
-.icon-command:before {
+.icon-codesandbox:before {
   content: "";
 }
 
-.icon-tel2:before {
+.icon-command:before {
   content: "";
 }
 
-.icon-zap:before {
+.icon-tel2:before {
   content: "";
 }
 
-.icon-user:before {
+.icon-zap:before {
   content: "";
 }
 
-.icon-github:before {
+.icon-user:before {
   content: "";
 }
 
-.icon-ga4:before {
+.icon-github:before {
   content: "";
 }
 
-.icon-globe:before {
+.icon-ga4:before {
   content: "";
 }
 
-.icon-user-check:before {
+.icon-globe:before {
   content: "";
 }
 
-.icon-py:before {
+.icon-user-check:before {
   content: "";
 }
 
-.icon-heart:before {
+.icon-py:before {
   content: "";
 }
 
-.icon-user-plus:before {
+.icon-heart:before {
   content: "";
 }
 
-.icon-alert-circle:before {
+.icon-user-plus:before {
   content: "";
 }
 
-.icon-home:before {
+.icon-alert-circle:before {
   content: "";
 }
 
-.icon-instagram:before {
+.icon-home:before {
   content: "";
 }
 
-.icon-alert-octagon:before {
+.icon-instagram:before {
   content: "";
 }
 
-.icon-life-buoy:before {
+.icon-alert-octagon:before {
   content: "";
 }
 
-.icon-pen-tool:before {
+.icon-life-buoy:before {
   content: "";
 }
 
-.icon-settings:before {
+.icon-pen-tool:before {
   content: "";
 }
 
-.icon-shield:before {
+.icon-settings:before {
   content: "";
 }
 
-.icon-slack:before {
+.icon-shield:before {
   content: "";
 }
 
-.icon-smartphone:before {
+.icon-slack:before {
   content: "";
 }
 
-.icon-terminal:before {
+.icon-smartphone:before {
   content: "";
 }
 
-.icon-mail:before {
+.icon-terminal:before {
   content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
+.icon-php-elephant:before {
+  content: "";
 }
 
 .normal {
