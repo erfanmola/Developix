@@ -1280,6 +1280,36 @@ kbd:hover {
   color: var(--accent);
 }
 
+#section-faq ul {
+  float: right;
+  width: 100%;
+  padding: 0 24px;
+}
+#section-faq ul li {
+  float: right;
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+#section-faq ul li h3 {
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-size: 1rem;
+  padding: 6px 0;
+  line-height: 2;
+}
+#section-faq ul li p {
+  float: right;
+  width: 100%;
+  direction: rtl;
+  text-align: justify;
+  font-size: 1rem;
+  padding: 6px 0;
+  line-height: 2;
+}
+
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
@@ -1619,5 +1649,3 @@ kbd:hover {
     margin: 12px 10%;
   }
 }
-
-/*# sourceMappingURL=app.css.map */
