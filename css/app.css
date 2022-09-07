@@ -11,8 +11,8 @@
 }
 @font-face {
   font-family: "Developix";
-  src: url("../assets/fonts/Developix/Developix.eot?c6epzt");
-  src: url("../assets/fonts/Developix/Developix.eot?c6epzt#iefix") format("embedded-opentype"), url("../assets/fonts/Developix/Developix.ttf?c6epzt") format("truetype"), url("../assets/fonts/Developix/Developix.woff?c6epzt") format("woff"), url("../assets/fonts/Developix/Developix.svg?c6epzt#Developix") format("svg");
+  src: url("../assets/fonts/Developix/Developix.eot?b05ak6");
+  src: url("../assets/fonts/Developix/Developix.eot?b05ak6#iefix") format("embedded-opentype"), url("../assets/fonts/Developix/Developix.ttf?b05ak6") format("truetype"), url("../assets/fonts/Developix/Developix.woff?b05ak6") format("woff"), url("../assets/fonts/Developix/Developix.svg?b05ak6#Developix") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,188 +30,180 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rocket:before {
-  content: "";
+.icon-seo:before {
+  content: "\e900";
 }
 
-.icon-jet:before {
-  content: "";
+.icon-react:before {
+  content: "\e901";
 }
 
-.icon-speed:before {
-  content: "";
-}
-
-.icon-spaceship:before {
-  content: "";
-}
-
-.icon-fast:before {
-  content: "";
-}
-
-.icon-business:before {
-  content: "";
-}
-
-.icon-domain:before {
-  content: "";
-}
-
-.icon-csharp:before {
-  content: "";
-}
-
-.icon-go:before {
-  content: "";
-}
-
-.icon-java:before {
-  content: "";
-}
-
-.icon-deno:before {
-  content: "";
-}
-
-.icon-node-dot-js:before {
-  content: "";
-}
-
-.icon-flutter:before {
-  content: "";
+.icon-vue-dot-js:before {
+  content: "\e902";
 }
 
 .icon-cplusplus:before {
-  content: "";
+  content: "\e903";
 }
 
 .icon-chevron-up:before {
-  content: "";
+  content: "\e904";
 }
 
 .icon-maximize:before {
-  content: "";
+  content: "\e905";
 }
 
 .icon-minimize:before {
-  content: "";
+  content: "\e906";
 }
 
 .icon-star:before {
-  content: "";
+  content: "\e907";
 }
 
 .icon-wordpress:before {
-  content: "";
+  content: "\e908";
 }
 
 .icon-aperture:before {
-  content: "";
+  content: "\e909";
 }
 
 .icon-linux-2:before {
-  content: "";
+  content: "\e90a";
 }
 
 .icon-codesandbox:before {
-  content: "";
+  content: "\e90b";
 }
 
 .icon-command:before {
-  content: "";
+  content: "\e90c";
 }
 
 .icon-tel2:before {
-  content: "";
+  content: "\e90d";
 }
 
 .icon-zap:before {
-  content: "";
+  content: "\e90e";
 }
 
 .icon-user:before {
-  content: "";
+  content: "\e90f";
 }
 
 .icon-github:before {
-  content: "";
+  content: "\e910";
 }
 
 .icon-ga4:before {
-  content: "";
+  content: "\e911";
 }
 
 .icon-globe:before {
-  content: "";
+  content: "\e912";
 }
 
 .icon-user-check:before {
-  content: "";
+  content: "\e913";
 }
 
 .icon-py:before {
-  content: "";
+  content: "\e914";
 }
 
 .icon-heart:before {
-  content: "";
+  content: "\e915";
 }
 
 .icon-user-plus:before {
-  content: "";
+  content: "\e916";
 }
 
 .icon-alert-circle:before {
-  content: "";
+  content: "\e917";
 }
 
 .icon-home:before {
-  content: "";
+  content: "\e918";
 }
 
 .icon-instagram:before {
-  content: "";
+  content: "\e919";
 }
 
 .icon-alert-octagon:before {
-  content: "";
+  content: "\e91a";
 }
 
 .icon-life-buoy:before {
-  content: "";
+  content: "\e91b";
 }
 
 .icon-pen-tool:before {
-  content: "";
+  content: "\e91c";
 }
 
 .icon-settings:before {
-  content: "";
+  content: "\e91d";
 }
 
 .icon-shield:before {
-  content: "";
+  content: "\e91e";
 }
 
 .icon-slack:before {
-  content: "";
+  content: "\e91f";
 }
 
 .icon-smartphone:before {
-  content: "";
+  content: "\e920";
 }
 
 .icon-terminal:before {
-  content: "";
+  content: "\e921";
 }
 
 .icon-mail:before {
-  content: "";
+  content: "\e922";
 }
 
 .icon-php-elephant:before {
-  content: "";
+  content: "\e923";
+}
+
+.icon-rocket:before {
+  content: "\e924";
+}
+
+.icon-business:before {
+  content: "\e925";
+}
+
+.icon-csharp:before {
+  content: "\e926";
+}
+
+.icon-go:before {
+  content: "\e927";
+}
+
+.icon-java:before {
+  content: "\e928";
+}
+
+.icon-deno:before {
+  content: "\e929";
+}
+
+.icon-node-dot-js:before {
+  content: "\e92a";
+}
+
+.icon-flutter:before {
+  content: "\e92b";
 }
 
 .normal {
@@ -722,7 +714,7 @@ hr {
 #section-websites ul li.open div {
   overflow-y: scroll;
   width: 100%;
-  max-height: calc(1024px / 16 * 9);
+  max-height: 576px;
 }
 #section-websites ul li.open h3 {
   float: right;
@@ -744,7 +736,7 @@ hr {
   box-shadow: var(--neu-shadow-inset-1);
 }
 #section-websites ul li.open button {
-  box-shadow: -3px -3px 7px #FFFFFF73, 3px 3px 5px rgba(45, 65, 85, 0.3);
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 3px 3px 5px rgba(45, 65, 85, 0.3);
   outline: none;
   border: none;
   background: var(--accent);
@@ -757,7 +749,7 @@ hr {
   cursor: pointer;
 }
 #section-websites ul li.open button:hover, #section-websites ul li.open button:focus {
-  box-shadow: inset -3px -3px 7px #FFFFFF73, inset 3px 3px 5px rgba(45, 65, 85, 0.3);
+  box-shadow: inset -3px -3px 7px rgba(255, 255, 255, 0.4509803922), inset 3px 3px 5px rgba(45, 65, 85, 0.3);
 }
 
 #section-bots ul {
@@ -1185,7 +1177,7 @@ iphone video {
   width: 100%;
   padding: 0;
   margin: 0;
-  min-height: calc(1024px / 100 * 30 * (12/6.2));
+  min-height: 594.5806451613px;
   object-fit: cover;
   background-size: cover;
   background-position: inherit;
@@ -1390,11 +1382,9 @@ kbd:hover {
   .desktop-only, .tablet-and-up {
     display: block;
   }
-
   .mobile-only, .tablet-only, .tablet-and-down {
     display: none !important;
   }
-
   html, body {
     font-size: 16px;
   }
@@ -1403,29 +1393,23 @@ kbd:hover {
   #back-to-top {
     display: none !important;
   }
-
   .tablet-only, .tablet-and-up, .tablet-and-down {
     display: block !important;
   }
-
   .mobile-only, .desktop-only {
     display: none !important;
   }
-
   .holder {
     width: 96% !important;
     margin: auto 2% !important;
   }
-
   html, body {
     font-size: 14px;
   }
-
   #section-groups ul li {
     width: 30%;
     margin: 18px 1.666%;
   }
-
   #header {
     padding: 32px 12px 92px !important;
   }
@@ -1444,7 +1428,6 @@ kbd:hover {
   #header #menu {
     margin-right: 32px !important;
   }
-
   #section-websites ul li.open {
     width: 96% !important;
     top: 12px !important;
@@ -1458,12 +1441,10 @@ kbd:hover {
   .line-svg {
     display: none;
   }
-
   #section-groups ul li {
     width: 44%;
     margin: 18px 3%;
   }
-
   #header {
     padding: 32px 12px 82px !important;
   }
@@ -1479,11 +1460,9 @@ kbd:hover {
     line-height: 36px;
     height: 36px;
   }
-
   .toggle-btn {
     margin-right: 0 !important;
   }
-
   #section-bots li {
     padding: 16px 0 !important;
   }
@@ -1491,12 +1470,10 @@ kbd:hover {
     font-size: 1.125rem;
     padding-right: 12px;
   }
-
   #section-tutorials li {
     width: 44%;
     margin: 12px 3%;
   }
-
   #section-commands ul li {
     padding: 0 16px !important;
     margin: 12px 0 !important;
@@ -1525,16 +1502,13 @@ kbd:hover {
   .mobile-only, .tablet-and-down {
     display: block !important;
   }
-
   .desktop-only, .tablet-only, .tablet-and-up {
     display: none !important;
   }
-
   #section-groups ul li {
     width: 80%;
     margin: 12px 10%;
   }
-
   #header {
     padding: 32px 12px 64px !important;
   }
@@ -1550,7 +1524,6 @@ kbd:hover {
     line-height: 32px;
     height: 32px;
   }
-
   #section-intro #iphone-container {
     float: left;
     width: 60%;
@@ -1564,11 +1537,9 @@ kbd:hover {
   #section-intro #intro-container h2 {
     text-align: center;
   }
-
   .sections {
     padding: 16px 0;
   }
-
   #section-websites ul {
     padding: 0 !important;
   }
@@ -1578,14 +1549,12 @@ kbd:hover {
     margin: 12px 10%;
     padding: 12px;
   }
-
   #section-bots ul {
     grid-template-columns: 1fr;
   }
   #section-bots #bot-codilobot:before {
     display: none !important;
   }
-
   #section-team #team-ul {
     padding: 12px 10%;
     grid-template-columns: 1fr;
@@ -1596,7 +1565,6 @@ kbd:hover {
   #section-team .empty {
     display: none;
   }
-
   footer {
     margin: 24px 0 0 !important;
     padding: 12px 0 !important;
@@ -1615,7 +1583,6 @@ kbd:hover {
     margin-top: 0 !important;
     font-size: 1rem !important;
   }
-
   #section-intro-bot #intro-container {
     width: 80%;
     margin: 16px 10%;
@@ -1632,18 +1599,15 @@ kbd:hover {
     width: 40% !important;
     margin: 0 30% !important;
   }
-
   #section-levels .masonry {
     width: 80% !important;
     margin: 0 10% !important;
     padding: 0 !important;
   }
-
   #section-basics li {
     margin: 0 3% !important;
     width: 94%;
   }
-
   #section-tutorials li {
     width: 80%;
     margin: 12px 10%;
